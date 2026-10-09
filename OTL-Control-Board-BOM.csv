@@ -39,7 +39,6 @@
 "TP1","POWER","Power touch contact (spring pin to housing pad)","Mill-Max 807-22-001-10-001101","","OTL:MillMax_807_SpringPin","1",""
 "TP2","BTN-","Brightness-down touch contact","Mill-Max 807-22-001-10-001101","","OTL:MillMax_807_SpringPin","1",""
 "TP3","BTN+","Brightness-up touch contact","Mill-Max 807-22-001-10-001101","","OTL:MillMax_807_SpringPin","1",""
-"TP4,TP5,TP6,TP7,TP8","TestPoint","test point","","","TestPoint:TestPoint_Pad_1.5x1.5mm","5",""
 "U1","XIAO ESP32C6","Seeed XIAO ESP32-C6 controller (ESPHome), socketed","Seeed XIAO ESP32C6 + 2x 1x7 2.54mm female header","","OTL:XIAO_Socket_2x7","1",""
 "U2","AP63205WU","24V to 5V buck regulator for the XIAO","AP63205WU-7","C2071056","Package_TO_SOT_SMD:TSOT-23-6","1",""
 "U3","AL8860MP","Constant-current LED driver","AL8860MP-13","C500782","Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm","1",""

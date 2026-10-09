@@ -812,7 +812,7 @@
         "uuid": "b73ab4a5-7693-50b7-ae0d-034173f53227"
       }
     ],
-    "used_designators": "LED1,TP4-8,C23,#PWR3-4,#PWR10,#PWR29,#PWR36,#PWR39,#PWR74-78,D4,CN1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

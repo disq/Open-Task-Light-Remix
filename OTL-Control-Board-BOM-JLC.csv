@@ -25,7 +25,6 @@
 "POWER","TP1","OTL:MillMax_807_SpringPin",""
 "BTN-","TP2","OTL:MillMax_807_SpringPin",""
 "BTN+","TP3","OTL:MillMax_807_SpringPin",""
-"TestPoint","TP4,TP5,TP6,TP7,TP8","TestPoint:TestPoint_Pad_1.5x1.5mm",""
 "XIAO ESP32C6","U1","OTL:XIAO_Socket_2x7",""
 "AP63205WU","U2","Package_TO_SOT_SMD:TSOT-23-6","C2071056"
 "AL8860MP","U3","Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm","C500782"

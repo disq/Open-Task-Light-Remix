@@ -70,7 +70,7 @@ GPIO14 (low = onboard antenna); the ESPHome config drives both low at boot.
 - **AL8860 (U3):** D3 sits beside U3, so the SW_LED node (U3 pins 5/6 -> D3 anode -> L2) is all on F.Cu with no vias. C9 (100 nF) is 2.1 mm from U3 VIN and C8 (10 uF) is 3.7 mm away, next to D3's cathode, with GND vias at their pads. U3 has GND vias in and around its exposed pad.
 - **R1 (current sense):** U3 VIN reaches R1 through a trace that also carries the LED current, so the sense isn't Kelvin. Expect the LED current a few percent below 667 mA.
 - **AP63205 (U2):** C21 (100 nF 0805) sits directly across VIN (pin 3) and GND (pin 4), with C3 (10 uF) close by. SW_5V is on F.Cu with no vias. FB is taken from L1's output pad on a short track. C5/C6 are 22 uF 25 V 1206 parts. The 5V output track from L1 to C5 passes under L1 between its pads; L1 is shielded, but routing it around would be cleaner.
-- **Bulk capacitor:** C1 (47 uF, 5.8 mm tall can) sits where the tail starts, on the 24V run between the input and the drivers, well away from the XIAO's antenna.
+- **Bulk capacitor:** C1 (47 uF Lelon VZT, 6.3 mm can, 5.8 mm tall) sits at the top of the head, on the 24V run near U3, as on V2. Its body ends about 1.3 mm from the XIAO's antenna end and overlaps `KEEPOUT_ANTENNA` by about 1 mm (only its pads are checked by DRC). The low-profile can keeps the RF impact small, but check Wi-Fi signal strength in the housing, and don't fit a taller can here.
 - **LED cable:** J2 pin 2 (LED+) sits on the quiet sense-resistor side. LED- goes through L2, so neither wire to the LED carries the raw switching node.
 - **Touch:** the PAD_* traces from the spring pins to the TTP223 inputs are 0.2 mm with 0.3 mm clearance. C16/C18/C20 are optional sensitivity trims (C0G, 0-50 pF). The TTP223 calibrates at power-up, so don't touch the pads while plugging in.
 - **Ground and antenna:** one GND zone on F.Cu and B.Cu covering the whole outline, with stitching vias. `KEEPOUT_ANTENNA` (both layers) keeps tracks, vias and pour away from the XIAO's antenna end. Keep tall parts away from it too.
@@ -89,7 +89,7 @@ Where a part was swapped for a better-stocked one, the board accepts both the or
 |---|---|---|---|
 | U7-U9 | TTP223-BA6 (Tontek, out of stock) | TTP223-BA6-TD (TDSEMIC) | Same SOT-23-6 and the same pinout. Pins 4 (SLH = AHLB) and 6 (STG = TOG) must not float; both are tied to GND |
 | L2 | SRN1060-470M (10x10) | FNR8040S470MT (8x8) | `OTL:L_SRN1060_FNR8040_Dual`: copper is the SRN1060 land, paste is the FNR8040 land, so either part fits |
-| C1 | Lelon VZT470M1HTR-0606 (C688950, 6.3x5.8) | 50TZV47M6.3X8 (C88734, 6.3x8) or any 47 uF 50 V 6.3 mm can | Same 6.3 mm can land, so any of them fits |
+| C1 | Lelon VZT470M1HTR-0606 (C688950, 6.3x5.8) | Any 47 uF 50 V 6.3 mm can up to ~6 mm tall | Same 6.3 mm can land. Avoid taller cans such as the 8 mm 50TZV47M6.3X8: C1 sits next to the XIAO's antenna end |
 | F1 | SMD1812P150TF/33 (1812 PTC, 1.5 A hold, 33 V) | Littelfuse 0466002.NRHF (1206, 2 A one-time fuse) | `OTL:Fuse_1812_1206_Dual`: copper is the union of both lands, paste is on the 1812 lands only. JLC reflows the PTC; fit the 1206 fuse by hand |
 
 Notes:
@@ -103,7 +103,7 @@ Notes:
 - **Bottom side:** U6 (VEML7700) and C14 are on the back. Having JLC place them means double-sided assembly, which costs noticeably more; hand-soldering those two is the cheap option.
 - **Through-hole:** J1 and J2 (Molex) and the TP1-TP3 spring pins need JLC's THT assembly or hand soldering.
 - **Pick-and-place:** when you export the CPL file, check JLC's rotation preview for the SOT-23, TSOT-23-6, MSOP-8EP, SOIC-8, SMA and electrolytic parts; these most often come out rotated.
-- **Housing:** C1 is a 5.8 mm tall can at the start of the tail (8 mm if you fit the 50TZV alternate). Check that the printed housing clears it there.
+- **Housing:** C1 is a 5.8 mm tall can at the top of the head, next to the XIAO's antenna end. Check that the printed housing clears it.
 
 ## Bring-up
 
