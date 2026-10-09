@@ -44,7 +44,7 @@
 "U3","AL8860MP","Constant-current LED driver","AL8860MP-13","C500782","Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm","1",""
 "U4","MCP4725A0T-E/CH","12-bit DAC for LED dimming (I2C 0x60)","MCP4725A0T-E/CH","C144198","Package_TO_SOT_SMD:SOT-23-6","1",""
 "U5","TMP1075D","Board temperature sensor with hardware ALERT (I2C 0x48)","TMP1075DR","C2878381","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","1",""
-"U6","VEML7700","Ambient light sensor (I2C 0x10)","VEML7700-TR","C504893","EasyEDA:LED-SMD_4P-L6.8-W2.4_VEML7700-TR","1",""
+"U6","VEML7700-TT","Ambient light sensor (I2C 0x10)","VEML7700-TT","C1850416","EasyEDA:SENSOR-SMD_EML7700-TT","1",""
 "U7","TTP223-BA6","Power touch detector","TTP223-BA6 or TTP223-BA6-TD","C42422127","Package_TO_SOT_SMD:SOT-23-6","1",""
 "U8","TTP223-BA6","Brightness-down touch detector","TTP223-BA6 or TTP223-BA6-TD","C42422127","Package_TO_SOT_SMD:SOT-23-6","1",""
 "U9","TTP223-BA6","Brightness-up touch detector","TTP223-BA6 or TTP223-BA6-TD","C42422127","Package_TO_SOT_SMD:SOT-23-6","1",""

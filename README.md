@@ -16,7 +16,7 @@ where they were on V2. The electronics are redesigned around jellybean parts and
 | Dimming | ESP32-S2 8-bit DAC -> diode -> RCD Vref | MCP4725 12-bit I2C DAC -> 1k/3.3k divider -> AL8860 CTRL |
 | Boot / thermal gate | TS12A4515 analog switch | Q1 AO3400A on CTRL, gate on the TMP1075 ALERT pin. Holds the LED off until ESPHome has configured the board, and cuts it in hardware above 56 C |
 | Temperature | TMP75-Q1 | TMP1075 (same SOIC-8 pinout, native ESPHome), ALERT on D10 and Q1 |
-| Light sensor | VEML7700 | VEML7700 (unchanged, same spot on the back) |
+| Light sensor | VEML7700-TR (side view) | VEML7700-TT (C1850416, top-view mounting), same spot on the back. It lies flat and looks straight up through the window in the lamp head's top surface. The -TR stands up and looks sideways at the window pocket's wall, so it only sees light scattered by the window floor. -TR and -TT use different land patterns, so don't swap them without changing the footprint |
 | Touch | ESP32-S2 touch pins | 3x TTP223 (the ESP32-C6 has no touch peripheral) |
 | Protection | SMF4L24A TVS, 1.1 A PTC | SMF24A TVS, 1.5 A PTC (1812) or 2 A chip fuse (1206) on a dual footprint |
 | Passives | 1206 | 0603 jellybean, larger only where voltage, power or routing needs it |
@@ -61,6 +61,7 @@ GPIO14 (low = onboard antenna); the ESPHome config drives both low at boot.
 - `EasyEDA.pretty`, `EasyEDA.kicad_sym`, `EasyEDA.3dshapes`: manufacturer footprints, symbols and 3D models imported from EasyEDA/LCSC for C1, D1, D3, J1 and U6 (project-local, so the project opens on any machine). J1's pads are numbered the other way round from V2, but the 24V pad is still on the right ("24V" silkscreen), so the power cable polarity is unchanged
 - `OTL-Control-Board-BOM.csv`: full BOM with description, MPN and LCSC part numbers
 - `OTL-Control-Board-BOM-JLC.csv`: JLCPCB assembly BOM (Comment / Designator / Footprint / LCSC Part #, DNP parts left out)
+- `OTL-Control-Board-CPL-JLC.csv`: JLCPCB placement file (Designator / Mid X / Mid Y / Layer / Rotation), parts with an LCSC number only. Coordinates are body centres in KiCad's absolute board coordinates (U6, J1 and J2 have their footprint origin off-centre, so they're corrected), so export Gerbers without "use drill/place file origin"
 - `OTL-Control-Board-schematic.pdf`: the schematic
 - `OTL-Control-Board.kicad_dru`: JLCPCB design-rule limits and per-netclass track widths
 - `esphome/open-task-light.yaml`: the full firmware config (validated with ESPHome 2026.9.1; `ota: encryption: {}` needs ESPHome 2026.9 or later). Copy `secrets.example.yaml` to `secrets.yaml` and fill it in
@@ -105,7 +106,7 @@ Notes:
 - **Bottom side:** U6 (VEML7700) and C14 are on the back. Having JLC place them means double-sided assembly, which costs noticeably more; hand-soldering those two is the cheap option.
 - **Through-hole:** J1 and J2 (Molex) and the TP1-TP3 spring pins need JLC's THT assembly or hand soldering.
 - **XIAO sockets (height matters):** use 2x Samtec **CES-107-01-G-S**, the 5.08 mm low-profile 1x7 sockets V2 used (DigiKey/Mouser; LCSC C3320114 has very little stock), or an equivalent low-profile socket. Solder the XIAO's male headers, then pull off the plastic header insulator (spacer) and trim the pins to about 4.6 mm, as V2 did with the QT Py. Generic 8.5 mm sockets plus the spacer lift the module about 6 mm higher than V2, which the head can't take: the LED assembly sits below it. Don't buy the pre-soldered XIAO.
-- **Pick-and-place:** when you export the CPL file, check JLC's rotation preview for the SOT-23, TSOT-23-6, MSOP-8EP, SOIC-8, SMA and electrolytic parts; these most often come out rotated.
+- **Pick-and-place:** when you export the CPL file, check JLC's rotation preview for the SOT-23, TSOT-23-6, MSOP-8EP, SOIC-8, SMA and electrolytic parts and U6; these most often come out rotated.
 - **Housing:** C1 is a 5.8 mm tall can at the top of the head, next to the XIAO's antenna end. Check that the printed housing clears it.
 
 ## Bring-up
