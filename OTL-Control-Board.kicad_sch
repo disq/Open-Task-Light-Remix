@@ -4618,6 +4618,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 161.29) (xy 123.19 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a0830b0-6e0f-4af3-ac04-c2eb37854fc4")
+	)
+	(wire
+		(pts
 			(xy 266.7 228.6) (xy 264.16 228.6)
 		)
 		(stroke
@@ -5445,6 +5455,16 @@
 			(type default)
 		)
 		(uuid "d6e3ed84-5fd4-5ed9-a04d-47a3f900906b")
+	)
+	(wire
+		(pts
+			(xy 123.19 173.99) (xy 123.19 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7aa4c0b-2a5e-49c8-938d-9c4bf59d4e32")
 	)
 	(wire
 		(pts
@@ -6291,6 +6311,7 @@
 		)
 		(property "Description" "Mounting hole"
 			(at 335.28 233.68 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6303,6 +6324,83 @@
 			(project "OTL-Control-Board"
 				(path "/b73ab4a5-7693-50b7-ae0d-034173f53227"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 123.19 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "02f78dda-f020-44b2-af1f-ef7e223cc470")
+		(property "Reference" "#PWR072"
+			(at 123.19 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 123.19 157.734 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7dc8707e-e911-43d0-9c07-c7c2044b4be5")
+		)
+		(instances
+			(project "OTL-Control-Board"
+				(path "/b73ab4a5-7693-50b7-ae0d-034173f53227"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -6364,6 +6462,7 @@
 		)
 		(property "Description" ""
 			(at 307.34 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6440,6 +6539,7 @@
 		)
 		(property "Description" "Brightness-down touch detector"
 			(at 176.53 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6554,6 +6654,7 @@
 		)
 		(property "Description" "High-frequency input decoupling for U3 (LED driver)"
 			(at 294.64 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6655,6 +6756,7 @@
 		)
 		(property "Description" ""
 			(at 176.53 218.44 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6730,6 +6832,7 @@
 		)
 		(property "Description" "I2C SDA pull-up"
 			(at 93.98 152.4 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6831,6 +6934,7 @@
 		)
 		(property "Description" "Brightness-up touch detector"
 			(at 276.86 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6944,6 +7048,7 @@
 		)
 		(property "Description" ""
 			(at 271.78 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7021,6 +7126,7 @@
 		)
 		(property "Description" "Decoupling for U7 (power touch)"
 			(at 109.22 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7121,6 +7227,7 @@
 		)
 		(property "Description" "Constant-current LED driver"
 			(at 342.9 76.2 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7243,6 +7350,7 @@
 		)
 		(property "Description" ""
 			(at 261.62 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7319,6 +7427,7 @@
 		)
 		(property "Description" ""
 			(at 276.86 218.44 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7395,6 +7504,7 @@
 		)
 		(property "Description" ""
 			(at 289.56 231.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7472,6 +7582,7 @@
 		)
 		(property "Description" "Decoupling for U5 (temperature sensor)"
 			(at 190.5 167.64 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7573,6 +7684,7 @@
 		)
 		(property "Description" ""
 			(at 101.6 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7650,6 +7762,7 @@
 		)
 		(property "Description" "Output capacitor for U2 (5V rail)"
 			(at 220.98 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7751,6 +7864,7 @@
 		)
 		(property "Description" ""
 			(at 143.51 245.11 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7828,6 +7942,7 @@
 		)
 		(property "Description" "24V input decoupling at the connector, next to D1"
 			(at 101.6 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7928,6 +8043,7 @@
 		)
 		(property "Description" "Blocks USB backfeed from the XIAO into the 5V rail"
 			(at 246.38 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8028,6 +8144,7 @@
 		)
 		(property "Description" "Board temperature sensor with hardware ALERT (I2C 0x48)"
 			(at 215.9 167.64 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8147,6 +8264,7 @@
 		)
 		(property "Description" ""
 			(at 215.9 177.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8223,6 +8341,7 @@
 		)
 		(property "Description" ""
 			(at 67.31 60.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8300,6 +8419,7 @@
 		)
 		(property "Description" "Holds CTRL low at power-up and over temperature (gate on TMP1075 ALERT)"
 			(at 368.3 104.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8404,6 +8524,7 @@
 		)
 		(property "Description" ""
 			(at 189.23 231.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8480,6 +8601,7 @@
 		)
 		(property "Description" ""
 			(at 76.2 218.44 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8556,6 +8678,7 @@
 		)
 		(property "Description" ""
 			(at 309.88 222.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8632,6 +8755,7 @@
 		)
 		(property "Description" ""
 			(at 243.84 245.11 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8709,6 +8833,7 @@
 		)
 		(property "Description" "Decoupling for U8 (down touch)"
 			(at 209.55 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8810,6 +8935,7 @@
 		)
 		(property "Description" ""
 			(at 88.9 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8885,6 +9011,7 @@
 		)
 		(property "Description" "I2C SCL pull-up"
 			(at 104.14 152.4 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8986,6 +9113,7 @@
 		)
 		(property "Description" ""
 			(at 114.3 146.05 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9062,6 +9190,7 @@
 		)
 		(property "Description" ""
 			(at 109.22 234.95 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9138,6 +9267,7 @@
 		)
 		(property "Description" ""
 			(at 137.16 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9214,6 +9344,7 @@
 		)
 		(property "Description" "Power touch detector"
 			(at 76.2 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9327,6 +9458,7 @@
 		)
 		(property "Description" ""
 			(at 246.38 173.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9404,6 +9536,7 @@
 		)
 		(property "Description" "Bootstrap capacitor for U2 (BST to SW)"
 			(at 190.5 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9505,6 +9638,7 @@
 		)
 		(property "Description" ""
 			(at 209.55 234.95 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9581,6 +9715,7 @@
 		)
 		(property "Description" ""
 			(at 233.68 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9657,6 +9792,7 @@
 		)
 		(property "Description" ""
 			(at 111.76 53.34 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9733,6 +9869,7 @@
 		)
 		(property "Description" ""
 			(at 132.08 173.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9808,6 +9945,7 @@
 		)
 		(property "Description" "Brightness-up touch contact"
 			(at 226.06 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9896,6 +10034,7 @@
 		)
 		(property "Description" "Optional LED ripple capacitor across J2 (DNP)"
 			(at 378.46 50.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9997,6 +10136,7 @@
 		)
 		(property "Description" ""
 			(at 101.6 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10073,6 +10213,7 @@
 		)
 		(property "Description" ""
 			(at 215.9 86.36 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10148,6 +10289,7 @@
 		)
 		(property "Description" "24V to 5V buck regulator for the XIAO"
 			(at 165.1 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10262,6 +10404,7 @@
 		)
 		(property "Description" "Bulk capacitor for the 24V rail (hot-plug damping, feeds U2 and U3)"
 			(at 88.9 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10364,6 +10507,7 @@
 		)
 		(property "Description" "Bulk input capacitor for U3 (LED driver)"
 			(at 307.34 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10465,6 +10609,7 @@
 		)
 		(property "Description" ""
 			(at 43.18 245.11 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10541,6 +10686,7 @@
 		)
 		(property "Description" ""
 			(at 294.64 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10617,6 +10763,7 @@
 		)
 		(property "Description" ""
 			(at 35.56 63.5 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10694,6 +10841,7 @@
 		)
 		(property "Description" "Sensitivity trim for U9 (DNP)"
 			(at 243.84 238.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10784,6 +10932,7 @@
 		)
 		(property "Description" ""
 			(at 215.9 83.82 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10799,6 +10948,83 @@
 			(project "OTL-Control-Board"
 				(path "/b73ab4a5-7693-50b7-ae0d-034173f53227"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d079577-b2a7-4ade-91df-7869edcc5150")
+		(property "Reference" "#PWR073"
+			(at 123.19 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d7f04e17-12d9-4d89-841f-a0e7cd2b9876")
+		)
+		(instances
+			(project "OTL-Control-Board"
+				(path "/b73ab4a5-7693-50b7-ae0d-034173f53227"
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -10859,6 +11085,7 @@
 		)
 		(property "Description" "12-bit DAC for LED dimming (I2C 0x60)"
 			(at 157.48 167.64 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10972,6 +11199,7 @@
 		)
 		(property "Description" ""
 			(at 76.2 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11047,6 +11275,7 @@
 		)
 		(property "Description" "LED output to the COB LED"
 			(at 396.24 63.5 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11148,6 +11377,7 @@
 		)
 		(property "Description" ""
 			(at 370.84 111.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11223,6 +11453,7 @@
 		)
 		(property "Description" "Seeed XIAO ESP32-C6 controller (ESPHome), socketed"
 			(at 55.88 165.1 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11348,6 +11579,7 @@
 		)
 		(property "Description" "LED current sense, sets 667 mA max"
 			(at 327.66 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11450,6 +11682,7 @@
 		)
 		(property "Description" "Decoupling for the XIAO 5V input (after D2)"
 			(at 261.62 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11551,6 +11784,7 @@
 		)
 		(property "Description" ""
 			(at 152.4 63.5 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11627,6 +11861,7 @@
 		)
 		(property "Description" ""
 			(at 88.9 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11702,6 +11937,7 @@
 		)
 		(property "Description" "DAC-to-CTRL divider, top"
 			(at 312.42 99.06 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11803,6 +12039,7 @@
 		)
 		(property "Description" ""
 			(at 144.78 170.18 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11879,6 +12116,7 @@
 		)
 		(property "Description" ""
 			(at 76.2 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11955,6 +12193,7 @@
 		)
 		(property "Description" ""
 			(at 190.5 173.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12031,6 +12270,7 @@
 		)
 		(property "Description" ""
 			(at 104.14 146.05 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12107,6 +12347,7 @@
 		)
 		(property "Description" ""
 			(at 212.09 60.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12184,6 +12425,7 @@
 		)
 		(property "Description" "TVS surge / reverse-polarity clamp on the 24V input"
 			(at 76.2 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12285,6 +12527,7 @@
 		)
 		(property "Description" ""
 			(at 121.92 53.34 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12360,6 +12603,7 @@
 		)
 		(property "Description" "TEMP_ALERT pull-up (also turns Q1 on at power-up)"
 			(at 114.3 152.4 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12461,6 +12705,7 @@
 		)
 		(property "Description" ""
 			(at 40.64 177.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12537,6 +12782,7 @@
 		)
 		(property "Description" ""
 			(at 121.92 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12613,6 +12859,7 @@
 		)
 		(property "Description" ""
 			(at 246.38 161.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12690,6 +12937,7 @@
 		)
 		(property "Description" "Sensitivity trim for U8 (DNP)"
 			(at 143.51 238.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12780,6 +13028,7 @@
 		)
 		(property "Description" ""
 			(at 144.78 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12856,6 +13105,7 @@
 		)
 		(property "Description" ""
 			(at 215.9 157.48 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12931,6 +13181,7 @@
 		)
 		(property "Description" "Brightness-down touch contact"
 			(at 125.73 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13018,6 +13269,7 @@
 		)
 		(property "Description" ""
 			(at 203.2 170.18 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13095,6 +13347,7 @@
 		)
 		(property "Description" "Input capacitor for U2 (5V buck)"
 			(at 137.16 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13196,6 +13449,7 @@
 		)
 		(property "Description" ""
 			(at 309.88 234.95 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13272,6 +13526,7 @@
 		)
 		(property "Description" ""
 			(at 177.8 68.58 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13347,6 +13602,7 @@
 		)
 		(property "Description" "Power touch contact (spring pin to housing pad)"
 			(at 25.4 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13434,6 +13690,7 @@
 		)
 		(property "Description" ""
 			(at 220.98 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13510,6 +13767,7 @@
 		)
 		(property "Description" ""
 			(at 111.76 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13586,6 +13844,7 @@
 		)
 		(property "Description" ""
 			(at 337.82 105.41 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13662,6 +13921,7 @@
 		)
 		(property "Description" ""
 			(at 325.12 105.41 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13738,6 +13998,7 @@
 		)
 		(property "Description" ""
 			(at 109.22 222.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13814,6 +14075,7 @@
 		)
 		(property "Description" ""
 			(at 327.66 49.53 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13890,6 +14152,7 @@
 		)
 		(property "Description" ""
 			(at 144.78 74.93 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13966,6 +14229,7 @@
 		)
 		(property "Description" ""
 			(at 176.53 238.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14043,6 +14307,7 @@
 		)
 		(property "Description" "Input fuse (1812 PTC for reflow, or 1206 fuse for hand soldering)"
 			(at 60.96 60.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14144,6 +14409,7 @@
 		)
 		(property "Description" "Ambient light sensor (I2C 0x10)"
 			(at 271.78 167.64 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14252,6 +14518,7 @@
 		)
 		(property "Description" "Decoupling for U4 (DAC)"
 			(at 132.08 167.64 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14354,6 +14621,7 @@
 		)
 		(property "Description" "Buck inductor for U2 (5V)"
 			(at 205.74 60.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14394,6 +14662,109 @@
 			(project "OTL-Control-Board"
 				(path "/b73ab4a5-7693-50b7-ae0d-034173f53227"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 123.19 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd4f3866-755d-4fb1-8797-35e3f6ceaaac")
+		(property "Reference" "C22"
+			(at 123.825 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF 10V"
+			(at 120.142 171.196 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 123.19 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Decoupling for U4 (DAC)"
+			(at 123.19 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0805 X5R 10uF 10V"
+			(at 123.19 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C15850"
+			(at 123.825 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "625729ee-4fc7-4245-892a-ec9ae5d237fb")
+		)
+		(pin "2"
+			(uuid "e62f3414-f723-4380-bcbb-743b33c3cf19")
+		)
+		(instances
+			(project "OTL-Control-Board"
+				(path "/b73ab4a5-7693-50b7-ae0d-034173f53227"
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -14455,6 +14826,7 @@
 		)
 		(property "Description" ""
 			(at 233.68 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14532,6 +14904,7 @@
 		)
 		(property "Description" "Freewheel diode for U3 (LED driver)"
 			(at 388.62 91.44 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14633,6 +15006,7 @@
 		)
 		(property "Description" ""
 			(at 190.5 161.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14710,6 +15084,7 @@
 		)
 		(property "Description" "Decoupling for U9 (up touch)"
 			(at 309.88 228.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14811,6 +15186,7 @@
 		)
 		(property "Description" ""
 			(at 76.2 238.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14887,6 +15263,7 @@
 		)
 		(property "Description" ""
 			(at 240.03 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14963,6 +15340,7 @@
 		)
 		(property "Description" ""
 			(at 209.55 222.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15142,6 +15520,7 @@
 		)
 		(property "Description" ""
 			(at 157.48 157.48 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15217,6 +15596,7 @@
 		)
 		(property "Description" "DAC-to-CTRL divider, bottom (scales 3.3V to 2.53V)"
 			(at 325.12 99.06 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15318,6 +15698,7 @@
 		)
 		(property "Description" ""
 			(at 132.08 161.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15394,6 +15775,7 @@
 		)
 		(property "Description" ""
 			(at 165.1 76.2 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15470,6 +15852,7 @@
 		)
 		(property "Description" ""
 			(at 157.48 177.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15546,6 +15929,7 @@
 		)
 		(property "Description" ""
 			(at 388.62 85.09 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15622,6 +16006,7 @@
 		)
 		(property "Description" ""
 			(at 342.9 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15654,7 +16039,7 @@
 		(dnp no)
 		(uuid "e4747512-9420-5d95-834b-208bb32e0251")
 		(property "Reference" "C11"
-			(at 338.455 96.52 0)
+			(at 338.328 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15664,7 +16049,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "1uF"
 			(at 338.455 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15699,6 +16084,7 @@
 		)
 		(property "Description" "CTRL filter and soft-start for U3"
 			(at 337.82 99.06 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15707,7 +16093,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 10nF"
+		(property "MPN" "0603 X5R 1uF"
 			(at 337.82 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -15718,7 +16104,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C57112"
+		(property "LCSC Part" "C15849"
 			(at 338.455 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -15800,6 +16186,7 @@
 		)
 		(property "Description" ""
 			(at 307.34 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15876,6 +16263,7 @@
 		)
 		(property "Description" ""
 			(at 88.9 231.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15952,6 +16340,7 @@
 		)
 		(property "Description" ""
 			(at 342.9 86.36 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16029,6 +16418,7 @@
 		)
 		(property "Description" "Buck inductor for U3 (LED driver)"
 			(at 370.84 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16131,6 +16521,7 @@
 		)
 		(property "Description" "Decoupling for U6 (light sensor)"
 			(at 246.38 167.64 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16232,6 +16623,7 @@
 		)
 		(property "Description" ""
 			(at 40.64 154.94 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16308,6 +16700,7 @@
 		)
 		(property "Description" ""
 			(at 294.64 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16384,6 +16777,7 @@
 		)
 		(property "Description" ""
 			(at 93.98 146.05 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16459,6 +16853,7 @@
 		)
 		(property "Description" "24V power input"
 			(at 27.94 63.5 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16560,6 +16955,7 @@
 		)
 		(property "Description" ""
 			(at 220.98 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16636,6 +17032,7 @@
 		)
 		(property "Description" ""
 			(at 271.78 177.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16713,6 +17110,7 @@
 		)
 		(property "Description" "Output capacitor for U2 (5V rail)"
 			(at 233.68 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16814,6 +17212,7 @@
 		)
 		(property "Description" ""
 			(at 152.4 68.58 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16890,6 +17289,7 @@
 		)
 		(property "Description" ""
 			(at 276.86 238.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16966,6 +17366,7 @@
 		)
 		(property "Description" ""
 			(at 271.78 157.48 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17043,6 +17444,7 @@
 		)
 		(property "Description" "Sensitivity trim for U7 (DNP)"
 			(at 43.18 238.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17133,6 +17535,7 @@
 		)
 		(property "Description" ""
 			(at 137.16 59.69 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17158,4 +17561,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
