@@ -52,9 +52,10 @@ output:
   - platform: mcp4725
     id: led_dac
     address: 0x60
-    # The AL8860 CTRL pin starts conducting at ~0.3V. The 3.3k/4.3k divider maps DAC full scale to 2.53V.
-    # 0.14 x 2.53V = 0.35V, which leaves margin over 1% resistors and the 3V3 tolerance and gives ~2.5% current at 1% brightness.
-    min_power: 0.14
+    # AL8860 CTRL is linear from 0.3V (0%) to 2.5V (100%). The 3.3k/4.3k divider maps DAC full scale to 2.53V.
+    # 0.17 x 2.53V = 0.43V, about 6% of full current (~40mA) at 1% brightness: inside the AL8860's recommended
+    # 5-100% analog dimming range, with margin over the MCP4725 offset, 1% resistors and the 3V3 tolerance.
+    min_power: 0.17
     zero_means_zero: true
 
 light:

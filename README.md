@@ -21,7 +21,7 @@ where they were on V2. The electronics are redesigned around jellybean parts and
 | Protection | SMF4L24A TVS, 1.1 A PTC | SMF24A TVS, 1.5 A PTC (1812) or 2 A chip fuse (1206) on a dual footprint |
 | Passives | 1206 | 0603 jellybean, larger only where voltage, power or routing needs it |
 
-Dimming resolution: CTRL is linear from 0.3 V (0%) to 2.5 V (100%). With the divider, DAC full scale is 2.53 V, which
+Dimming resolution: CTRL is linear from 0.3 V (0%) to 2.5 V (100%). C11 (1 uF) on CTRL filters it with a 0.77 ms time constant (767 ohm divider x 1 uF), which also strips 3V3 ripple that reaches CTRL through the DAC, since the MCP4725 uses its supply as reference. With the divider, DAC full scale is 2.53 V, which
 leaves about 3600 usable steps out of 4096, against roughly 90 on V2.
 
 ### Power-up behaviour
@@ -58,6 +58,7 @@ GPIO14 (low = onboard antenna); the ESPHome config drives both low at boot.
 
 - `OTL-Control-Board.kicad_pro / .kicad_sch / .kicad_pcb`: the KiCad 10 project. Every part has a `Description` field saying what it does (e.g. "Input capacitor for U2 (5V buck)")
 - `lib/OTL.kicad_sym`, `lib/OTL.pretty`: custom symbols (XIAO, TTP223, VEML7700) and footprints, including the two dual footprints (L2, F1). The mechanical footprints were converted from the V2 Eagle board, so the positions match exactly
+- `EasyEDA.pretty`, `EasyEDA.kicad_sym`, `EasyEDA.3dshapes`: manufacturer footprints, symbols and 3D models imported from EasyEDA/LCSC for C1, D1, D3, J1 and U6 (project-local, so the project opens on any machine). J1's pads are numbered the other way round from V2, but the 24V pad is still on the right ("24V" silkscreen), so the power cable polarity is unchanged
 - `OTL-Control-Board-BOM.csv`: full BOM with description, MPN and LCSC part numbers
 - `OTL-Control-Board-BOM-JLC.csv`: JLCPCB assembly BOM (Comment / Designator / Footprint / LCSC Part #, DNP parts left out)
 - `OTL-Control-Board-schematic.pdf`: the schematic
@@ -69,7 +70,7 @@ GPIO14 (low = onboard antenna); the ESPHome config drives both low at boot.
 - **AL8860 (U3):** D3 sits beside U3, so the SW_LED node (U3 pins 5/6 -> D3 anode -> L2) is all on F.Cu with no vias. C9 (100 nF) is 2.1 mm from U3 VIN and C8 (10 uF) is 3.7 mm away, next to D3's cathode, with GND vias at their pads. U3 has GND vias in and around its exposed pad.
 - **R1 (current sense):** U3 VIN reaches R1 through a trace that also carries the LED current, so the sense isn't Kelvin. Expect the LED current a few percent below 667 mA.
 - **AP63205 (U2):** C21 (100 nF 0805) sits directly across VIN (pin 3) and GND (pin 4), with C3 (10 uF) close by. SW_5V is on F.Cu with no vias. FB is taken from L1's output pad on a short track. C5/C6 are 22 uF 25 V 1206 parts. The 5V output track from L1 to C5 passes under L1 between its pads; L1 is shielded, but routing it around would be cleaner.
-- **Bulk capacitor:** C1 (47 uF, 8 mm tall can) sits where the tail starts, on the 24V run between the input and the drivers, well away from the XIAO's antenna.
+- **Bulk capacitor:** C1 (47 uF, 5.8 mm tall can) sits where the tail starts, on the 24V run between the input and the drivers, well away from the XIAO's antenna.
 - **LED cable:** J2 pin 2 (LED+) sits on the quiet sense-resistor side. LED- goes through L2, so neither wire to the LED carries the raw switching node.
 - **Touch:** the PAD_* traces from the spring pins to the TTP223 inputs are 0.2 mm with 0.3 mm clearance. C16/C18/C20 are optional sensitivity trims (C0G, 0-50 pF). The TTP223 calibrates at power-up, so don't touch the pads while plugging in.
 - **Ground and antenna:** one GND zone on F.Cu and B.Cu covering the whole outline, with stitching vias. `KEEPOUT_ANTENNA` (both layers) keeps tracks, vias and pour away from the XIAO's antenna end. Keep tall parts away from it too.
@@ -88,7 +89,7 @@ Where a part was swapped for a better-stocked one, the board accepts both the or
 |---|---|---|---|
 | U7-U9 | TTP223-BA6 (Tontek, out of stock) | TTP223-BA6-TD (TDSEMIC) | Same SOT-23-6 and the same pinout. Pins 4 (SLH = AHLB) and 6 (STG = TOG) must not float; both are tied to GND |
 | L2 | SRN1060-470M (10x10) | FNR8040S470MT (8x8) | `OTL:L_SRN1060_FNR8040_Dual`: copper is the SRN1060 land, paste is the FNR8040 land, so either part fits |
-| C1 | 47 uF 50 V 6.3x7.7 | 50TZV47M6.3X8 (6.3x8) | Same 6.3 mm can land, so no change |
+| C1 | Lelon VZT470M1HTR-0606 (C688950, 6.3x5.8) | 50TZV47M6.3X8 (C88734, 6.3x8) or any 47 uF 50 V 6.3 mm can | Same 6.3 mm can land, so any of them fits |
 | F1 | SMD1812P150TF/33 (1812 PTC, 1.5 A hold, 33 V) | Littelfuse 0466002.NRHF (1206, 2 A one-time fuse) | `OTL:Fuse_1812_1206_Dual`: copper is the union of both lands, paste is on the 1812 lands only. JLC reflows the PTC; fit the 1206 fuse by hand |
 
 Notes:
@@ -102,11 +103,11 @@ Notes:
 - **Bottom side:** U6 (VEML7700) and C14 are on the back. Having JLC place them means double-sided assembly, which costs noticeably more; hand-soldering those two is the cheap option.
 - **Through-hole:** J1 and J2 (Molex) and the TP1-TP3 spring pins need JLC's THT assembly or hand soldering.
 - **Pick-and-place:** when you export the CPL file, check JLC's rotation preview for the SOT-23, TSOT-23-6, MSOP-8EP, SOIC-8, SMA and electrolytic parts; these most often come out rotated.
-- **Housing:** C1 is an 8 mm tall can at the start of the tail. Check that the printed housing clears it there.
+- **Housing:** C1 is a 5.8 mm tall can at the start of the tail (8 mm if you fit the 50TZV alternate). Check that the printed housing clears it there.
 
 ## Bring-up
 
 - The LED stays dark until ESPHome is running (Q1 holds it off), so a bare board looks dead. Flash the firmware first, then test the LED.
 - To test the hardware thermal cut-off, temporarily set `limit_high` low (e.g. 35 C) and warm the board. The LED should go out even with the ESP stopped.
-- Check for flicker at minimum brightness. The floor is about 2.5% of full current and can vary 1-4% between boards (MCP4725 offset, resistor and 3V3 tolerances). If it flickers, raise `min_power` from 0.14 to about 0.16.
+- Minimum brightness: `min_power: 0.17` puts CTRL at about 0.43 V, so the dimmest setting is about 6% of full current (~40 mA). That keeps it inside the AL8860's recommended 5-100% analog range. With the MCP4725 offset and resistor and 3V3 tolerances, expect roughly 5-7% between boards. Check for flicker at minimum brightness; if you want it dimmer and it stays stable, you can lower `min_power`.
 - Before ordering, confirm the LED's forward voltage at 667 mA. The CXB1512 18 V class sits around 19-20 V, which gives roughly 300 kHz and 80% duty on 24 V. If yours runs much higher, check the AL8860 duty and on-time limits.
