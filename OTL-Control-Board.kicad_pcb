@@ -1117,7 +1117,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "9f9920ec-6c31-4bcf-8a9a-52ba801ad8fe")
@@ -1150,7 +1150,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1287,7 +1287,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "ea8e39c8-86e8-4a3e-aeee-3880f14d59c3")
@@ -1320,7 +1320,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2362,7 +2362,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF 50V"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2499,7 +2499,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "6f1c338a-f1b5-4851-a493-90ae2059ff1e")
@@ -2532,7 +2532,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3822,7 +3822,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF 50V"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4270,7 +4270,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4b782fb5-a0c4-4859-b8ef-4e61ea939ead")
@@ -4303,7 +4303,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8787,7 +8787,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "65712409-aa01-4df8-a681-b0c5ed821140")
@@ -8820,7 +8820,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9671,7 +9671,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "ebfa9810-0778-4dd9-9d23-fb261bad0f56")
@@ -9704,7 +9704,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16194,7 +16194,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 0 -1.43 0)
 			(layer "B.Fab")
 			(uuid "30d45926-0919-4eb2-ad3c-6826aa6ccac0")
@@ -16228,7 +16228,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)

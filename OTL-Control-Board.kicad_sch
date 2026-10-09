@@ -7453,7 +7453,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF 50V"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 294.64 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -7881,7 +7881,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 109.855 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7925,7 +7925,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 109.22 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -8337,7 +8337,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 191.135 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8381,7 +8381,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 190.5 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -8741,7 +8741,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF 50V"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 101.6 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -9745,7 +9745,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 210.185 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9789,7 +9789,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 209.55 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -10371,7 +10371,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 191.135 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10415,7 +10415,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 190.5 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -15546,7 +15546,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 132.715 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15590,7 +15590,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 132.08 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -16009,7 +16009,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 310.515 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16053,7 +16053,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 309.88 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -17764,7 +17764,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 247.015 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17808,7 +17808,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 X7R 100nF"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 246.38 167.64 0)
 			(hide yes)
 			(show_name no)

@@ -59,8 +59,7 @@ GPIO14 (low = onboard antenna); the ESPHome config drives both low at boot.
 - `OTL-Control-Board.kicad_pro / .kicad_sch / .kicad_pcb`: the KiCad 10 project. Every part has a `Description` field saying what it does (e.g. "Input capacitor for U2 (5V buck)")
 - `lib/OTL.kicad_sym`, `lib/OTL.pretty`: custom symbols (XIAO, TTP223, VEML7700) and footprints, including the two dual footprints (L2, F1). The mechanical footprints were converted from the V2 Eagle board, so the positions match exactly
 - `EasyEDA.pretty`, `EasyEDA.kicad_sym`, `EasyEDA.3dshapes`: manufacturer footprints, symbols and 3D models imported from EasyEDA/LCSC for C1, D1, D3, J1 and U6 (project-local, so the project opens on any machine). J1's pads are numbered the other way round from V2, but the 24V pad is still on the right ("24V" silkscreen), so the power cable polarity is unchanged
-- `OTL-Control-Board-BOM.csv`: full BOM with description, MPN and LCSC part numbers
-- `OTL-Control-Board-BOM-JLC.csv`: JLCPCB assembly BOM (Comment / Designator / Footprint / LCSC Part #, DNP parts left out)
+- `OTL-Control-Board-BOM.csv`: the BOM, one row per distinct part (grouped by LCSC number and footprint), in JLCPCB's column format (Comment / Designator / Footprint / LCSC Part #) plus MPN and Qty, so the same file uploads to JLC and works as a shopping list. DNP parts (C10, C16, C18, C20) and the bare test points TP4-TP8 are left out; per-part descriptions are in the schematic's `Description` field
 - `OTL-Control-Board-CPL-JLC.csv`: JLCPCB placement file (Designator / Mid X / Mid Y / Layer / Rotation), parts with an LCSC number only. Coordinates are body centres in KiCad's absolute board coordinates (U6, J1 and J2 have their footprint origin off-centre, so they're corrected), so export Gerbers without "use drill/place file origin"
 - `OTL-Control-Board-schematic.pdf`: the schematic
 - `OTL-Control-Board.kicad_dru`: JLCPCB design-rule limits and per-netclass track widths
