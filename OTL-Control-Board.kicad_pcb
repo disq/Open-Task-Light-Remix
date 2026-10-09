@@ -1834,7 +1834,7 @@
 				(pins "1")
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -2717,7 +2717,7 @@
 				(pins "1")
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -2887,7 +2887,7 @@
 				(pins "1")
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -6153,7 +6153,7 @@
 				)
 			)
 		)
-		(property "MPN" "Seeed XIAO ESP32C6 + 2x 1x7 2.54mm female header"
+		(property "MPN" "Seeed XIAO ESP32-C6 + 2x Samtec CES-107-01-G-S low-profile 1x7 socket (V2 part). Trim module pins to ~4.6 mm, insulator removed"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10605,7 +10605,7 @@
 				(pins "1")
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
@@ -11148,7 +11148,7 @@
 				(pins "1")
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)

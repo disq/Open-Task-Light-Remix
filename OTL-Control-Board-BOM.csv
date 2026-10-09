@@ -39,7 +39,7 @@
 "TP1","POWER","Power touch contact (spring pin to housing pad)","Mill-Max 807-22-001-10-001101","","OTL:MillMax_807_SpringPin","1",""
 "TP2","BTN-","Brightness-down touch contact","Mill-Max 807-22-001-10-001101","","OTL:MillMax_807_SpringPin","1",""
 "TP3","BTN+","Brightness-up touch contact","Mill-Max 807-22-001-10-001101","","OTL:MillMax_807_SpringPin","1",""
-"U1","XIAO ESP32C6","Seeed XIAO ESP32-C6 controller (ESPHome), socketed","Seeed XIAO ESP32C6 + 2x 1x7 2.54mm female header","","OTL:XIAO_Socket_2x7","1",""
+"U1","XIAO ESP32C6","Seeed XIAO ESP32-C6 controller (ESPHome), socketed","Seeed XIAO ESP32-C6 + 2x Samtec CES-107-01-G-S low-profile 1x7 socket (V2 part). Trim module pins to ~4.6 mm, insulator removed","","OTL:XIAO_Socket_2x7","1",""
 "U2","AP63205WU","24V to 5V buck regulator for the XIAO","AP63205WU-7","C2071056","Package_TO_SOT_SMD:TSOT-23-6","1",""
 "U3","AL8860MP","Constant-current LED driver","AL8860MP-13","C500782","Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.5x1.8mm","1",""
 "U4","MCP4725A0T-E/CH","12-bit DAC for LED dimming (I2C 0x60)","MCP4725A0T-E/CH","C144198","Package_TO_SOT_SMD:SOT-23-6","1",""

@@ -71,17 +71,19 @@ GPIO14 (low = onboard antenna); the ESPHome config drives both low at boot.
 - **R1 (current sense):** U3 VIN reaches R1 through a trace that also carries the LED current, so the sense isn't Kelvin. Expect the LED current a few percent below 667 mA.
 - **AP63205 (U2):** C21 (100 nF 0805) sits directly across VIN (pin 3) and GND (pin 4), with C3 (10 uF) close by. SW_5V is on F.Cu with no vias. FB is taken from L1's output pad on a short track. C5/C6 are 22 uF 25 V 1206 parts. The 5V output track from L1 to C5 passes under L1 between its pads; L1 is shielded, but routing it around would be cleaner.
 - **Bulk capacitor:** C1 (47 uF Lelon VZT, 6.3 mm can, 5.8 mm tall) sits at the top of the head, on the 24V run near U3, as on V2. Its body ends about 1.3 mm from the XIAO's antenna end and overlaps `KEEPOUT_ANTENNA` by about 1 mm (only its pads are checked by DRC). The low-profile can keeps the RF impact small, but check Wi-Fi signal strength in the housing, and don't fit a taller can here.
+- **Test points:** TP4 CTRL, TP5 +24V, TP6 +5V, TP7 +3V3, TP8 LED+ (1.5 mm pads). They're excluded from the BOM and the position files, so JLC leaves them bare.
+- **3V3 bulk:** C22 (10 uF 0805) backs up the 3V3 rail that the DAC uses as its reference, together with C11 on CTRL.
 - **LED cable:** J2 pin 2 (LED+) sits on the quiet sense-resistor side. LED- goes through L2, so neither wire to the LED carries the raw switching node.
 - **Touch:** the PAD_* traces from the spring pins to the TTP223 inputs are 0.2 mm with 0.3 mm clearance. C16/C18/C20 are optional sensitivity trims (C0G, 0-50 pF). The TTP223 calibrates at power-up, so don't touch the pads while plugging in.
 - **Ground and antenna:** one GND zone on F.Cu and B.Cu covering the whole outline, with stitching vias. `KEEPOUT_ANTENNA` (both layers) keeps tracks, vias and pour away from the XIAO's antenna end. Keep tall parts away from it too.
-- **XIAO footprint:** the courtyard covers only the header rows, because the module sits on sockets. U7 and C15/C16 sit underneath it, so use low-profile parts there and check the socket height.
+- **XIAO footprint:** the courtyard covers only the header rows, because the module sits on sockets. U7 and C15/C16 sit underneath it; with the low-profile CES sockets (see Ordering and assembly) there's room for 0603 and SOT-23 parts.
 - **Design rules:** JLCPCB's standard 2-layer limits (no extra-cost options), with the extras in `OTL-Control-Board.kicad_dru`. No track thinner than 0.2 mm. Vias at least 0.45 mm across with a 0.3 mm drill. Clearance at least 0.127 mm, copper 0.3 mm from the board edge, through-hole pads keep at least a 0.18 mm ring, silkscreen text at least 1.0/0.15 mm.
 - **Netclasses:** `HighCurrent` 0.8 mm (+24V, VIN_RAW, LED+, LED-, SW_LED). `Power` 0.5 mm (+5V, XIAO_5V, SW_5V, GND). `Power3V3` 0.3 mm (+3V3). `Touch` 0.2 mm with 0.3 mm clearance (PAD_*). `Default` 0.25 mm for everything else. The `.kicad_dru` rules set the router width (`opt`) and DRC minimum: HighCurrent 0.8 (min 0.5), Power 0.5 (min 0.3), Touch 0.2. Inside the U2/U3 footprints, power tracks can neck down to 0.2 mm to reach the fine-pitch pins.
 
 ## Parts and sourcing (checked against JLC/LCSC stock, 2026-10-08)
 
 Every assembled part has an `LCSC Part` field (schematic and board). The parts without one (XIAO, Mill-Max 807 spring
-pins, 1x7 female headers, mounting hole) are bought separately or are mechanical.
+pins, XIAO sockets, mounting hole) are bought separately or are mechanical.
 
 Where a part was swapped for a better-stocked one, the board accepts both the original and the replacement:
 
@@ -102,6 +104,7 @@ Notes:
 
 - **Bottom side:** U6 (VEML7700) and C14 are on the back. Having JLC place them means double-sided assembly, which costs noticeably more; hand-soldering those two is the cheap option.
 - **Through-hole:** J1 and J2 (Molex) and the TP1-TP3 spring pins need JLC's THT assembly or hand soldering.
+- **XIAO sockets (height matters):** use 2x Samtec **CES-107-01-G-S**, the 5.08 mm low-profile 1x7 sockets V2 used (DigiKey/Mouser; LCSC C3320114 has very little stock), or an equivalent low-profile socket. Solder the XIAO's male headers, then pull off the plastic header insulator (spacer) and trim the pins to about 4.6 mm, as V2 did with the QT Py. Generic 8.5 mm sockets plus the spacer lift the module about 6 mm higher than V2, which the head can't take: the LED assembly sits below it. Don't buy the pre-soldered XIAO.
 - **Pick-and-place:** when you export the CPL file, check JLC's rotation preview for the SOT-23, TSOT-23-6, MSOP-8EP, SOIC-8, SMA and electrolytic parts; these most often come out rotated.
 - **Housing:** C1 is a 5.8 mm tall can at the top of the head, next to the XIAO's antenna end. Check that the printed housing clears it.
 
