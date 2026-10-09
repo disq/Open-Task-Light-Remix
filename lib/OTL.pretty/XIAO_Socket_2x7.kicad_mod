@@ -49,14 +49,15 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start -8.9 -10.5)
-		(end 8.9 10.5)
+		(start -8.9 -10.425)
+		(end 8.9 10.55)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.Fab")
+		(uuid "d3caddff-adb9-4494-a7fa-62edb15525c7")
 	)
 	(fp_rect
 		(start -9 -9)
@@ -80,13 +81,14 @@
 	)
 	(fp_rect
 		(start -4.5 8)
-		(end 4.5 11)
+		(end 4.5 12.05)
 		(stroke
 			(width 0.1)
 			(type dash)
 		)
 		(fill no)
 		(layer "F.Fab")
+		(uuid "1554e141-0186-4d80-bf0b-df3c28bd0d2d")
 	)
 	(fp_text user "USB"
 		(at 0 9.5 0)
@@ -98,23 +100,46 @@
 			)
 		)
 	)
-	(fp_line
-		(start -8.9 -10.5)
-		(end 8.9 -10.5)
+	(fp_rect
+		(start -8.9 -10.425)
+		(end 8.9 10.55)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
+		(fill no)
 		(layer "F.SilkS")
+		(uuid "ee8836ed-acbd-470b-9710-0d9cf672b80c")
 	)
 	(fp_line
-		(start -8.9 10.5)
-		(end 8.9 10.5)
+		(start -4.5 10.55)
+		(end -4.5 12.05)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "d6176860-f4d3-415a-8c15-d47993dd99dd")
+	)
+	(fp_line
+		(start -4.5 12.05)
+		(end 4.5 12.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5d4fbb54-de5b-4f46-8852-45fdd9fab14a")
+	)
+	(fp_line
+		(start 4.5 12.05)
+		(end 4.5 10.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9085a451-dfaf-4db4-97d3-3a7dc7db6b44")
 	)
 	(pad "1" thru_hole rect
 		(at 7.62 7.62)
