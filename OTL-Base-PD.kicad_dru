@@ -1,0 +1,35 @@
+(version 1)
+
+# JLCPCB 2-layer standard capabilities (no extra-cost options), jlcpcb.com/capabilities/pcb-capabilities
+
+(rule "JLC: PTH annular ring >= 0.18mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+	(constraint annular_width (min 0.18mm)))
+
+(rule "JLC: PTH hole to copper >= 0.28mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.28mm)))
+
+(rule "JLC: pad hole to pad hole >= 0.45mm"
+	(condition "A.Type == 'Pad' && B.Type == 'Pad'")
+	(constraint hole_to_hole (min 0.45mm)))
+
+(rule "JLC: NPTH drill >= 0.5mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'")
+	(constraint hole_size (min 0.5mm)))
+
+(rule "JLC: pad to pad >= 0.15mm"
+	(condition "A.Type == 'Pad' && B.Type == 'Pad'")
+	(constraint clearance (min 0.15mm)))
+
+# Track widths per net class. The router uses "opt" as its width, and DRC flags anything below "min".
+# Power = VBUS, /VOUT, GND: ~0.75 A typical, 1.5 A worst case. The global 0.2 mm floor is set in Board Setup > Constraints.
+
+(rule "Width: Power"
+	(condition "A.NetClass == 'Power'")
+	(constraint track_width (min 0.3mm) (opt 0.5mm)))
+
+# Neck-down into fine-pitch pads: J1 USB-C (0.5 mm pitch row), U1 SSOP-10 (1.0 mm pitch), Q1 SOT-23. Later rules win.
+(rule "Width: neck-down at J1/U1/Q1"
+	(condition "A.NetClass == 'Power' && (A.intersectsCourtyard('J1') || A.intersectsCourtyard('U1') || A.intersectsCourtyard('Q1'))")
+	(constraint track_width (min 0.25mm) (opt 0.4mm)))
