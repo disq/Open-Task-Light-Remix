@@ -31,6 +31,11 @@ power-up. Q1 prevents that:
 
 1. At power-up the TMP1075 ALERT pin is active-low and idle, so it floats high through R6. Q1 turns on and holds CTRL at 0 V: the LED stays off, whatever the DAC outputs.
 2. ESPHome switches ALERT to active-high. ALERT now sits low, Q1 turns off, and the DAC controls the LED.
+
+   ESPHome's `tmp1075` driver (as of 2026.10) packs the config byte in reverse bit order, so its `polarity: active_high`
+   option sets R0 instead of POL and ALERT stays active-low. The firmware works around this with an `on_boot` lambda
+   that writes `0x64` to CFGR (220 ms conversions, 1 fault, POL=1, comparator) after the driver's own setup. Without it
+   "Over temperature" reads on at room temperature and the lamp switches itself off about 2 s after turning on.
 3. Above 56 C ALERT releases, Q1 turns on and the LED goes off in hardware, even if the ESP has crashed. It comes back below 50 C.
 
 If the TMP1075 is missing or can't be configured, the lamp stays off. An OTA reboot doesn't reset the TMP1075, so the
@@ -124,6 +129,7 @@ Notes:
 - The LED stays dark until ESPHome is running (Q1 holds it off), so a bare board looks dead. Flash the firmware first, then test the LED.
 - To test the hardware thermal cut-off, temporarily set `limit_high` low (e.g. 35 C) and warm the board. The LED should go out even with the ESP stopped.
 - Minimum brightness: `min_power: 0.17` puts CTRL at about 0.43 V, so the dimmest setting is about 6% of full current (~40 mA). That keeps it inside the AL8860's recommended 5-100% analog range. With the MCP4725 offset and resistor and 3V3 tolerances, expect roughly 5-7% between boards. Check for flicker at minimum brightness; if you want it dimmer and it stays stable, you can lower `min_power`.
+- Measured on the first board: CTRL 1.9 mV off, 0.429 V at 1%, 2.515 V at 100%. TEMP_ALERT (D10) reads about 0 V once configured.
 - Before ordering, confirm the LED's forward voltage at 667 mA. Cree's datasheet gives the CXB1512 18 V class as 17.2 V typical and 19 V maximum at 700 mA (Tj 85 C), which is about 73% duty on 24 V and about 90% on the 20 V base board. To check the headroom, measure across R1 (TP5 to TP8) at full brightness: 100 mV is the full 667 mA, less means the input is too low for your LED.
 
 ## USB-PD base board (OTL-Base-PD)
