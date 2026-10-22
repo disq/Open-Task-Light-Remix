@@ -5,6 +5,16 @@ substitutions:
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
+  on_boot:
+    # Runs after all components are set up, so it overrides the tmp1075 driver's config write.
+    # The driver's bitfield is reversed against the TMP1075 CFGR MSB (OS R1 R0 F1 F0 POL TM SD), so its
+    # polarity option lands on R0 and ALERT stays active-low. 0x64 = 220ms rate, 1 fault, POL=1, comparator.
+    priority: -100
+    then:
+      - lambda: |-
+          if (!id(board_temp).write_byte(0x01, 0x64)) {
+            ESP_LOGE("tmp1075", "Failed to set ALERT active-high");
+          }
 
 esp32:
   board: seeed_xiao_esp32c6
@@ -20,7 +30,7 @@ api:
 
 ota:
   - platform: esphome
-    encryption: {}  # reuses the API key, so only someone holding it can flash
+    encryption:
 
 wifi:
   ssid: !secret wifi_ssid
@@ -29,6 +39,9 @@ wifi:
     password: !secret ap_password
 
 captive_portal:
+
+# Set Wi-Fi over USB after flashing (web.esphome.io > Connect > Configure Wi-Fi).
+improv_serial:
 
 i2c:
   sda: GPIO22  # D4
@@ -81,13 +94,18 @@ sensor:
     update_interval: 10s
     # Same limits as the original firmware (HIGH_TEMP 50, MAX_TEMP 56).
     # The TMP1075 powers up active-low, so ALERT floats high (via R6) and Q1 holds CTRL at 0V: the LED stays off
-    # until this config switches ALERT to active-high. From then on ALERT only releases (and Q1 kills the LED in
-    # hardware) above 56C, even if the ESP has crashed.
+    # until on_boot switches ALERT to active-high. From then on ALERT only goes high (and Q1 kills the LED in
+    # hardware) above 56C, even if the ESP has crashed. Polarity/function are set in on_boot, not here.
     alert:
       limit_high: 56
       limit_low: 50
-      function: comparator
-      polarity: active_high
+
+  - platform: wifi_signal
+    name: Wi-Fi signal
+    update_interval: 60s
+
+  - platform: uptime
+    name: Uptime
 
   - platform: veml7700
     address: 0x10
@@ -167,3 +185,7 @@ binary_sensor:
     on_press:
       then:
         - light.turn_off: lamp
+
+button:
+  - platform: restart
+    name: Restart

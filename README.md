@@ -110,6 +110,17 @@ Notes:
 
 ## Bring-up
 
+### Flashing
+
+1. Copy `esphome/secrets.example.yaml` to `esphome/secrets.yaml` (gitignored) and fill it in: a fresh API key (`openssl rand -base64 32`), your Wi-Fi, and a fallback AP password.
+2. Plug the XIAO into USB (on or off the board). First flash goes over USB: `esphome run esphome/open-task-light.yaml` and pick the `/dev/cu.usbmodem…` port. If the port doesn't appear, hold BOOT while plugging it in.
+3. If Wi-Fi isn't in `secrets.yaml`, set it over USB after flashing: open web.esphome.io in Chrome, Connect, then "Configure Wi-Fi" (`improv_serial`). Or join the fallback AP `open-task-light` and use the captive portal.
+4. Adopt it in Home Assistant with the API key from `secrets.yaml`. Later updates go over Wi-Fi (`esphome run` picks the network target).
+5. Check the "Wi-Fi signal" sensor in the housing; C1 sits near the antenna end, so below about -75 dBm is worth looking at.
+
+### First power-up checks
+
+- With 24 V in, check 5 V at TP6 and 3.3 V at TP7. TP4 (CTRL) should read 0 V before the firmware has configured the TMP1075.
 - The LED stays dark until ESPHome is running (Q1 holds it off), so a bare board looks dead. Flash the firmware first, then test the LED.
 - To test the hardware thermal cut-off, temporarily set `limit_high` low (e.g. 35 C) and warm the board. The LED should go out even with the ESP stopped.
 - Minimum brightness: `min_power: 0.17` puts CTRL at about 0.43 V, so the dimmest setting is about 6% of full current (~40 mA). That keeps it inside the AL8860's recommended 5-100% analog range. With the MCP4725 offset and resistor and 3V3 tolerances, expect roughly 5-7% between boards. Check for flicker at minimum brightness; if you want it dimmer and it stays stable, you can lower `min_power`.

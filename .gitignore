@@ -4,3 +4,5 @@ OTL-Base-PD-backups/
 _autosave-*
 ~*.lck
 *.kicad_prl
+esphome/secrets.yaml
+esphome/.esphome/
