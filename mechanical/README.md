@@ -16,7 +16,7 @@ Printed parts that replace or add to the upstream Open Task Light v1.1 parts. Ev
 
 All in `freestanding-base-usbpd/`:
 
-- `freestanding-base-outer-shell_v1.1-usbpd.stl`: the outer shell with a walled-off pocket for the board, an opening for the USB-C, and a bore for a light pipe over the board's LED.
+- `freestanding-base-outer-shell_v1.1-usbpd.stl`: the outer shell with a walled-off pocket for the board, an opening for the USB-C, and a small hole over the board's power-good LED.
 - `freestanding-base-outer-shell_v1.1-usbpd-split.stl` + `freestanding-base-outer-shell-collar_v1.1-usbpd.stl`: or the same shell in two parts, which print without supports.
 - `freestanding-base-outer-shell-lid_v1.1-usbpd.stl`: a lid with a notch for the lead, for the half with the pocket. The other lid is upstream's.
 - `freestanding-base-bottom-shell_v1.1-usbpd.stl` + `freestanding-base-cable-cover_v1.1-usbpd.stl`: a bottom shell with a wider pass-through for the lead, and a cover that slides in from the rim to close it and hold the lead.
@@ -34,9 +34,8 @@ All in `freestanding-base-usbpd/`:
 1. Split shell only: glue the collar onto the shell with CA glue, keeping glue out of the bore so the bracket cover can turn.
 2. Solder the lead to the board's J2 pads, with the wires going in from the back of the board: centre pin to the square pad (+20 V), sleeve to the round pad.
 3. With the shell upside down, start the board into the pocket USB-C end first, tilted about 10° and shifted about 3 mm towards the centre. Slide it outwards as it goes in and push it home, then slide it about 0.5 mm outwards so the USB-C steps into its opening. Screw it in from the back.
-4. Push the light pipe in from the top and trim it flush.
-5. Check the notched lid sits flat on the pocket walls. Tape over the pocket, fill the shot a few mm below the pocket walls, peel the tape off and check for stray beads. Fit the notched lid with the lead through the notch.
-6. Fit the bottom shell with its slot under the USB-C port. Slide the lead in along the slot from the rim, plug it into the jack, press it into the channel, and slide the cover in from the rim.
+4. Check the notched lid sits flat on the pocket walls. Tape over the pocket, fill the shot a few mm below the pocket walls, peel the tape off and check for stray beads. Fit the notched lid with the lead through the notch.
+5. Fit the bottom shell with its slot under the USB-C port. Slide the lead in along the slot from the rim, plug it into the jack, press it into the channel, and slide the cover in from the rim.
 
 With the front-mount jack, in place of upstream's jack plate steps:
 
@@ -53,7 +52,6 @@ Use shot at least 1 mm across (S550 as upstream, or lead shot), not sand or grit
 ### Also needed
 
 - 4x M2 self-tapping screws, M2x5 or M2x6 (7 mm max).
-- 9 mm of clear 1.75 mm filament for the light pipe.
 - A right-angle DC plug with about 10 cm of lead (up to 4 mm thick, wire up to 0.5 mm²), cut from a right-angle extension that matches your jack. The one used here, not yet tried with the front-mount jack, is the 5.5 x 2.1 mm one on [this AliExpress listing](https://www.aliexpress.com/item/1005013033782592.html).
 - A USB-C PD charger with a 20 V profile (most 30 W and up).
 

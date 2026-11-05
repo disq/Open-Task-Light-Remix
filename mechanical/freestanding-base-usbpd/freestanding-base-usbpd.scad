@@ -39,9 +39,9 @@ usb_channel_z0 = 3.6;
 shell_top_z = 28.4;
 led_pos = [81.6, -7.3];
 led_h = 1.1;
-light_pipe_d = 1.8;
-light_pipe_sleeve_d = 3.4;
-light_pipe_z0 = board_face_z + led_h + 0.5;
+led_hole_d = 1.8;
+led_hole_sleeve_d = 3.4;
+led_hole_z0 = board_face_z + led_h + 0.5;
 
 lid_notch_half_w = 4;
 lid_notch_r = 70;
@@ -130,12 +130,12 @@ module bosses() pocket_frame() for (h = holes)
 module pilot_holes() pocket_frame() for (h = holes)
     translate([h[0], h[1], board_z - 1]) cylinder(d = pilot_d, h = pilot_depth + board_t + 1, $fn = 24);
 
-// takes a 1.75 mm clear filament offcut as a light pipe from D2 to the top face
-module light_pipe_sleeve() pocket_frame()
-    translate([led_pos[0], led_pos[1], light_pipe_z0]) cylinder(d = light_pipe_sleeve_d, h = 26 - light_pipe_z0, $fn = 32);
+// an open hole from just above D2 to the top face, so the power-good LED shows
+module led_hole_sleeve() pocket_frame()
+    translate([led_pos[0], led_pos[1], led_hole_z0]) cylinder(d = led_hole_sleeve_d, h = 26 - led_hole_z0, $fn = 32);
 
-module light_pipe_bore() pocket_frame()
-    translate([led_pos[0], led_pos[1], light_pipe_z0 - 1]) cylinder(d = light_pipe_d, h = shell_top_z - light_pipe_z0 + 2, $fn = 24);
+module led_hole() pocket_frame()
+    translate([led_pos[0], led_pos[1], led_hole_z0 - 1]) cylinder(d = led_hole_d, h = shell_top_z - led_hole_z0 + 2, $fn = 24);
 
 module rounded_x(w, h, r, x0, x1)
     hull() for (y = [-w / 2 + r, w / 2 - r], z = [-h / 2 + r, h / 2 - r])
@@ -159,11 +159,11 @@ module shell()
             }
             shot_barriers();
             bosses();
-            light_pipe_sleeve();
+            led_hole_sleeve();
         }
         pilot_holes();
         usb_cutout();
-        light_pipe_bore();
+        led_hole();
     }
 
 // with the shell upside down the neck lips would overhang the chamber by 2.5-3 mm, so slope them at 45°
