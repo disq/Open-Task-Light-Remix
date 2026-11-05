@@ -7,7 +7,6 @@ built as upstream; this repo holds the parts that change:
 - **Firmware** (`esphome/`): the ESPHome config for that board, for Home Assistant. See [Bring-up](#bring-up).
 - **USB-PD base board** (`OTL-Base-PD.*`): USB-C in, 20 V out to the lamp, in a pocket in the freestanding base, in place of the external 24 V supply. See [USB-PD base board](#usb-pd-base-board-otl-base-pd).
 - **Printed parts** (`mechanical/`): the freestanding base reworked for the PD board, wider button sockets for the electronics housing, and a lead counterweight lid that fits.
-- **Metal parts** (`mechanical/`): STEP files for ordering the heat-pipe top plate and copper LED bracket from JLC.
 
 Gerbers for both boards are in `fab/`, interactive BOMs in `bom/` and `bompd/`.
 
@@ -177,10 +176,3 @@ A separate board for the pocket in the base: USB-C in, 20 V out to the centre ba
 ## Counterweight
 
 - `mechanical/counterweight/counterweight-lid-lead_v1.0-clearance.stl`: a replacement for the upstream lead counterweight lid, for the unchanged `counterweight-enclosure-lead_v1.0`. The lid goes in tongue first and the screw end swings in, but upstream's 1.3 mm tongue tilts into a slot only 1.5 mm deep, with 0.15 mm all round at the ends and sides. Even in CAD it only goes in at its exact size: 0.05 mm oversize all round and the screw end can't swing in past the lip. The lip and the slot roof also print as bridges when the enclosure stands upright, and sag into that gap. This lid is 11.7 mm wide (0.3 mm a side). It stops 0.55 mm short of the opening at the screw end and 0.35 mm under the lip. The tongue is 1.0 mm thick (`tongue_t`), and the lid has a 0.6 mm chamfer on its outer top edge, 1.5 mm on its inner screw-end edge and 0.3 mm round the bed face. A collision sweep against the enclosure (eight section planes) still finds a way in with the lid 0.2 mm oversize on every face and the lip and slot roof sagged 0.3 mm. The tongue tip, screw hole and countersink are where upstream has them. The thinner tongue lets the top end lift up to 0.5 mm before it catches the lip. Printed and fitted into a printed enclosure. Print it as it lies, inner face down, no supports. To fit: tilt the lid, hook the tongue into the slot, push it up towards the slot, swing the screw end in and let it drop until the holes line up. `counterweight-lid-lead.scad` builds it; `lid-section.png` compares it with upstream's lid.
-
-## Metal parts
-
-- `mechanical/aluminum-heat-pipe-top-plate*` and `mechanical/copper-led-bracket*`: STEP files built from upstream's DXFs (the `.dxf` files here), for ordering the two custom-manufactured parts from JLC. JLC's sheet-metal service has no copper, uses Al 5052 rather than 6061, and has 1.5 mm stock but not 1.6 mm, so each part comes in two versions:
-  - Top plate: `_1.5mm_sheet-metal` (Al 5052, the cheapest) or `_1.6mm_CNC` (Al 6061-T6, as the guide specifies). Upload the matching PDF as the thread drawing: the M3 holes are modelled at the 2.5 mm tap-drill size and called out as 2x M3x0.5 through, where the DXF has 3.4 mm clearance holes.
-  - LED bracket: `_1.6mm_CNC` (copper T2, as the guide specifies, milled from solid, so it costs much more) or `_1.5mm_sheet-metal-aluminum` (Al 5052, cheap, but conducts heat much less well). Both come already bent, with a 1.6 mm inner bend radius worked out from the DXF; the 1.5 mm version keeps the same outside dimensions.
-  - The unsuffixed `.step` files are copies of the 1.5 mm sheet-metal top plate and the 1.6 mm CNC copper bracket.
