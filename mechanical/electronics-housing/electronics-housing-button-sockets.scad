@@ -1,4 +1,4 @@
-src = "/Users/disq/Downloads/Open-Task-Light/Open Task Light/Printed Parts/STL/Electronics Housing/";
+src = "../../../Open-Task-Light/Open Task Light/Printed Parts/STL/Electronics Housing/";
 
 // the kit buttons are 14.46 square and 34.2-34.4 round, and upstream's pockets print about 0.15 mm under their drawn size;
 // these print about 0.15 mm over the buttons, enough to press them in by hand

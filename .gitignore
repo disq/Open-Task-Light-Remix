@@ -1,6 +1,5 @@
-.DS_Store
-OTL-Control-Board-backups/
-OTL-Base-PD-backups/
+*-backups/
+fp-info-cache
 _autosave-*
 ~*.lck
 *.kicad_prl

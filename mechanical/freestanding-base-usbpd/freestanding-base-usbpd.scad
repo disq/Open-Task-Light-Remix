@@ -1,6 +1,6 @@
 part = "shell"; // shell | shell_split | collar | lid | bottom | cover | jack_plate | cable_cap | bracket_cover | assembly
 
-src = "/Users/disq/Downloads/Open-Task-Light/Open Task Light/Printed Parts/STL/Freestanding Base/";
+src = "../../../Open-Task-Light/Open Task Light/Printed Parts/STL/Freestanding Base/";
 board_stl = "OTL-Base-PD.stl";
 
 $fn = 96;
