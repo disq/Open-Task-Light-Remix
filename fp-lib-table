@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "OTL") (type "KiCad") (uri "${KIPRJMOD}/lib/OTL.pretty") (options "") (descr "Open Task Light custom footprints"))
+	(lib (name "EasyEDA") (type "KiCad") (uri "${KIPRJMOD}/EasyEDA.pretty") (options "") (descr ""))
+)

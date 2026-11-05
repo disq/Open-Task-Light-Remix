@@ -1,0 +1,43 @@
+(version 1)
+
+# JLCPCB 2-layer standard capabilities (no extra-cost options), jlcpcb.com/capabilities/pcb-capabilities
+
+(rule "JLC: PTH annular ring >= 0.18mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+	(constraint annular_width (min 0.18mm)))
+
+(rule "JLC: PTH hole to copper >= 0.28mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.28mm)))
+
+(rule "JLC: pad hole to pad hole >= 0.45mm"
+	(condition "A.Type == 'Pad' && B.Type == 'Pad'")
+	(constraint hole_to_hole (min 0.45mm)))
+
+(rule "JLC: NPTH drill >= 0.5mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'")
+	(constraint hole_size (min 0.5mm)))
+
+(rule "JLC: pad to pad >= 0.15mm"
+	(condition "A.Type == 'Pad' && B.Type == 'Pad'")
+	(constraint clearance (min 0.15mm)))
+
+# Track widths per net class. The router uses "opt" as its width, and DRC flags anything below "min".
+# The global 0.2 mm floor is set in Board Setup > Constraints.
+
+(rule "Width: HighCurrent"
+	(condition "A.NetClass == 'HighCurrent'")
+	(constraint track_width (min 0.5mm) (opt 0.8mm)))
+
+(rule "Width: Power"
+	(condition "A.NetClass == 'Power'")
+	(constraint track_width (min 0.3mm) (opt 0.5mm)))
+
+(rule "Width: Touch"
+	(condition "A.NetClass == 'Touch'")
+	(constraint track_width (min 0.2mm) (opt 0.2mm)))
+
+# Neck-down into fine-pitch power pins (AL8860 MSOP-8 at 0.65 mm pitch, AP63205 TSOT-23-6). Later rules win.
+(rule "Width: neck-down at U2/U3"
+	(condition "(A.NetClass == 'HighCurrent' || A.NetClass == 'Power') && (A.intersectsCourtyard('U3') || A.intersectsCourtyard('U2'))")
+	(constraint track_width (min 0.2mm) (opt 0.4mm)))

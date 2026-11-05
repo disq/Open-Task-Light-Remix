@@ -1,0 +1,843 @@
+(footprint "Molex_MicroLock_2200970271_V"
+	(version 20241229)
+	(generator "otl_gen")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Molex Micro-Lock Plus 1.25mm, 2 pos, vertical THT (2200970271). From OTL V2 Eagle board.")
+	(property "Reference" "MICROLOCK-VERTICAL0"
+		(at -1.27 -3.81 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify right top)
+		)
+	)
+	(property "Value" "2200970271"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_line
+		(start -1.6991 1.5378)
+		(end 2.9491 1.5378)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 2.9491 1.5378)
+		(end 2.9491 -2.577)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.6991 -0.8904)
+		(end -1.6991 1.5378)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -1.6991 -2.577)
+		(end -1.6991 -1.8096)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start 2.9491 -2.577)
+		(end -1.6991 -2.577)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+	)
+	(fp_line
+		(start -10.7161 1.4108)
+		(end -10.8431 1.1568)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.7161 1.4108)
+		(end -10.5891 1.1568)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.5721 1.4108)
+		(end -11.0971 1.4108)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.8431 1.1568)
+		(end -10.5891 1.1568)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -12.1131 0.254)
+		(end -11.8591 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.2351 0.254)
+		(end 5.4891 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.9861 0)
+		(end -11.9861 1.27)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.9861 0)
+		(end -12.1131 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.9861 0)
+		(end -11.8591 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 0)
+		(end 5.7431 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 -7.53)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.625 0)
+		(end -12.3671 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.625 0)
+		(end 0.625 -7.911)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.25 0)
+		(end 1.25 -7.53)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.3621 0)
+		(end 5.3621 1.27)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.3621 0)
+		(end 5.2351 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.3621 0)
+		(end 5.4891 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.3621 0)
+		(end 5.2351 -0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.3621 0)
+		(end 5.4891 -0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.3621 0)
+		(end 5.3621 -1.27)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 5.2351 -0.254)
+		(end 5.4891 -0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -0.95 -1.35)
+		(end -0.95 -7.911)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.8431 -2.196)
+		(end -10.5891 -2.196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.9861 -2.45)
+		(end -12.1131 -2.704)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.9861 -2.45)
+		(end -11.8591 -2.704)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.9861 -2.45)
+		(end -11.9861 -3.72)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.7161 -2.45)
+		(end -10.7161 1.4108)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.7161 -2.45)
+		(end -10.8431 -2.196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.7161 -2.45)
+		(end -10.5891 -2.196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.5721 -2.45)
+		(end -12.3671 -2.45)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.5721 -2.45)
+		(end -1.5721 -13.245)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 2.8221 -2.45)
+		(end 2.8221 -13.245)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -12.1131 -2.704)
+		(end -11.8591 -2.704)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -7.149)
+		(end -0.254 -7.022)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -7.149)
+		(end -1.27 -7.149)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -7.149)
+		(end -0.254 -7.276)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.25 -7.149)
+		(end 1.504 -7.022)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.25 -7.149)
+		(end 2.52 -7.149)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.25 -7.149)
+		(end 1.504 -7.276)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -0.254 -7.276)
+		(end -0.254 -7.022)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.504 -7.276)
+		(end 1.504 -7.022)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -0.95 -7.53)
+		(end -1.204 -7.403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -0.95 -7.53)
+		(end -2.22 -7.53)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -0.95 -7.53)
+		(end -1.204 -7.657)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.625 -7.53)
+		(end 0.879 -7.403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.625 -7.53)
+		(end 1.895 -7.53)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.625 -7.53)
+		(end 0.879 -7.657)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.204 -7.657)
+		(end -1.204 -7.403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.879 -7.657)
+		(end 0.879 -7.403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.5721 -12.864)
+		(end -1.3181 -12.737)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.5721 -12.864)
+		(end 2.8221 -12.864)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.5721 -12.864)
+		(end -1.3181 -12.991)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 2.8221 -12.864)
+		(end 2.5681 -12.737)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 2.8221 -12.864)
+		(end 2.5681 -12.991)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.3181 -12.991)
+		(end -1.3181 -12.737)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 2.5681 -12.991)
+		(end 2.5681 -12.737)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.5721 1.4108)
+		(end 2.8221 1.4108)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 2.8221 1.4108)
+		(end 2.8221 -2.45)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start -1.5721 -2.45)
+		(end -1.5721 1.4108)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_line
+		(start 2.8221 -2.45)
+		(end -1.5721 -2.45)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "Alt Padstyle 2: OX90Y60D30P"
+		(at -14.1886 18.8098 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Alt Padstyle 1: OX60Y90D30P"
+		(at -14.1886 16.9048 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Right Mtg Padstyle: RX50Y100D30P"
+		(at -16.8835 14.9998 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Left Mtg Padstyle: EX43Y43D43P"
+		(at -15.731 13.0948 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "3rd Mtg Padstyle: RX100Y50D40P"
+		(at -16.1038 11.1898 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "2nd Mtg Padstyle: RX50Y100D40P"
+		(at -16.1038 9.2848 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "1st Mtg Padstyle: RX80Y110D50P"
+		(at -15.9174 7.3798 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "Default Padstyle: EX44Y44D24P"
+		(at -15.1547 5.4748 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "0in/0mm"
+		(at 5.8701 0.3175 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "0.152in/3.861mm"
+		(at -19.3089 -0.2021 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "0.096in/2.45mm"
+		(at -20.0027 -0.9075 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "0.049in/1.25mm"
+		(at -3.1293 -7.657 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "-0.062in/-1.575mm"
+		(at -4.7812 -8.038 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "0.173in/4.394mm"
+		(at -3.4174 -13.372 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0 0)
+		(size 1 1)
+		(drill 0.6096)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.0635)
+		(thermal_bridge_angle 0)
+	)
+	(pad "2" thru_hole circle
+		(at 1.25 0 0)
+		(size 1 1)
+		(drill 0.6096)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.0635)
+		(thermal_bridge_angle 0)
+	)
+	(pad "" np_thru_hole circle
+		(at -0.95 -1.35 0)
+		(size 1.0922 1.0922)
+		(drill 1.0922)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.0635)
+		(thermal_bridge_angle 0)
+	)
+	(embedded_fonts no)
+	(fp_rect
+		(start -1.9491 -2.827)
+		(end 3.1991 1.7878)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,229 @@
+(footprint "XIAO_Socket_2x7"
+	(version 20241229)
+	(generator "otl_gen")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Seeed XIAO (and Adafruit QT Py) socket, 2x 1x7 2.54mm female headers, rows 15.24mm apart. USB end towards +Y."
+	)
+	(property "Reference" "REF**"
+		(at 0 -12 0)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "XIAO_Socket_2x7"
+		(at 0 12 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -8.9 -10.425)
+		(end 8.9 10.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d3caddff-adb9-4494-a7fa-62edb15525c7")
+	)
+	(fp_rect
+		(start -9 -9)
+		(end -6.24 9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_rect
+		(start 6.24 -9)
+		(end 9 9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(fp_rect
+		(start -4.5 8)
+		(end 4.5 12.05)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1554e141-0186-4d80-bf0b-df3c28bd0d2d")
+	)
+	(fp_text user "USB"
+		(at 0 9.5 0)
+		(layer "F.Fab")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_rect
+		(start -8.9 -10.425)
+		(end 8.9 10.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ee8836ed-acbd-470b-9710-0d9cf672b80c")
+	)
+	(fp_line
+		(start -4.5 10.55)
+		(end -4.5 12.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d6176860-f4d3-415a-8c15-d47993dd99dd")
+	)
+	(fp_line
+		(start -4.5 12.05)
+		(end 4.5 12.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5d4fbb54-de5b-4f46-8852-45fdd9fab14a")
+	)
+	(fp_line
+		(start 4.5 12.05)
+		(end 4.5 10.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9085a451-dfaf-4db4-97d3-3a7dc7db6b44")
+	)
+	(pad "1" thru_hole rect
+		(at 7.62 7.62)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "2" thru_hole circle
+		(at 7.62 5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "3" thru_hole circle
+		(at 7.62 2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "4" thru_hole circle
+		(at 7.62 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "5" thru_hole circle
+		(at 7.62 -2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "6" thru_hole circle
+		(at 7.62 -5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "7" thru_hole circle
+		(at 7.62 -7.62)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "8" thru_hole circle
+		(at -7.62 -7.62)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "9" thru_hole circle
+		(at -7.62 -5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "10" thru_hole circle
+		(at -7.62 -2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "11" thru_hole circle
+		(at -7.62 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "12" thru_hole circle
+		(at -7.62 2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "13" thru_hole circle
+		(at -7.62 5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(pad "14" thru_hole circle
+		(at -7.62 7.62)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+	)
+	(embedded_fonts no)
+)

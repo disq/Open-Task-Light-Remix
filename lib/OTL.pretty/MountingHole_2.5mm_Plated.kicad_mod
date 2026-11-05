@@ -1,0 +1,70 @@
+(footprint "MountingHole_2.5mm_Plated"
+	(version 20241229)
+	(generator "otl_gen")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "2.5mm plated mounting hole, 2.8mm pad. From OTL V2 Eagle board.")
+	(property "Reference" "U$2"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "2.5MMPLATEDTHROUGHHOLE"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(pad "" thru_hole circle
+		(at 0 0 0)
+		(size 3 3)
+		(drill 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.0635)
+		(thermal_bridge_angle 0)
+	)
+	(embedded_fonts no)
+	(fp_rect
+		(start -1.65 -1.65)
+		(end 1.65 1.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(embedded_fonts no)
+)

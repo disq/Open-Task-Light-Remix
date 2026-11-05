@@ -1,0 +1,718 @@
+(footprint "MillMax_807_SpringPin"
+	(version 20241229)
+	(generator "otl_gen")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Mill-Max 807-22-001-10-001101 spring loaded contact, THT. From OTL V2 Eagle board.")
+	(property "Reference" "POWERBTN0"
+		(at 0 0 -180)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "807-22-001-10-001101"
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify)
+		)
+	)
+	(fp_line
+		(start 3.937 0)
+		(end 4.064 -0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 3.937 0)
+		(end 4.064 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 3.937 0)
+		(end 3.937 -1.27)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 3.937 0)
+		(end 3.937 1.27)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 3.937 0)
+		(end 3.81 -0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 3.937 0)
+		(end 3.81 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 3.81 -0.254)
+		(end 4.064 -0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 3.81 0.254)
+		(end 4.064 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.651 -11.938)
+		(end 1.651 -11.684)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.397 -11.811)
+		(end 2.667 -11.811)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.397 -11.811)
+		(end 1.651 -11.938)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.397 -11.811)
+		(end 1.651 -11.684)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 1.397 -1.397)
+		(end 1.397 -12.192)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0.254 -6.223)
+		(end 0.254 -5.969)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -6.096)
+		(end 1.27 -6.096)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -6.096)
+		(end 0.254 -6.223)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -6.096)
+		(end 0.254 -5.969)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -6.096)
+		(end -0.254 -6.223)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -6.096)
+		(end -0.254 -5.969)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 -6.096)
+		(end -1.27 -6.096)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 0)
+		(end 4.318 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 0)
+		(end 4.318 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 -6.477)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 -6.477)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start 0 0)
+		(end -12.192 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -0.254 -6.223)
+		(end -0.254 -5.969)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.397 -11.811)
+		(end -1.651 -11.938)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.397 -11.811)
+		(end -1.651 -11.684)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.397 -11.811)
+		(end -2.667 -11.811)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.397 -1.397)
+		(end -1.397 -12.192)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.397 -1.397)
+		(end -10.922 -1.397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.397 -1.397)
+		(end -12.192 -1.397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.397 1.397)
+		(end -10.922 1.397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -1.651 -11.938)
+		(end -1.651 -11.684)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.541 -1.397)
+		(end -10.414 -1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.541 -1.397)
+		(end -10.541 -2.667)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.541 -1.397)
+		(end -10.668 -1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.541 1.397)
+		(end -10.414 1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.541 1.397)
+		(end -10.541 2.667)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.541 1.397)
+		(end -10.668 1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.668 -1.651)
+		(end -10.414 -1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -10.668 1.651)
+		(end -10.414 1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.811 -1.397)
+		(end -11.684 -1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.811 -1.397)
+		(end -11.811 -2.667)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.811 -1.397)
+		(end -11.938 -1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.811 0)
+		(end -11.684 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.811 0)
+		(end -11.811 1.27)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.811 0)
+		(end -11.938 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.938 -1.651)
+		(end -11.684 -1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_line
+		(start -11.938 0.254)
+		(end -11.684 0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "Cmts.User")
+	)
+	(fp_arc
+		(start 1.397 0)
+		(mid 0.987828 -0.9878)
+		(end 0 -1.397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_arc
+		(start 0 -1.397)
+		(mid -0.987828 -0.9878)
+		(end -1.397 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_arc
+		(start 0 1.397)
+		(mid 0.987828 0.9878)
+		(end 1.397 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_arc
+		(start -1.397 0)
+		(mid -0.987828 0.9878)
+		(end 0 1.397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+	)
+	(fp_text user "0in/0mm"
+		(at 4.445 0.3175 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "0in/0mm"
+		(at -1.9237 -6.604 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "0.11in/2.794mm"
+		(at -3.7543 -12.319 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "Alt Padstyle 1: OX60Y90D30P"
+		(at -14.8136 16.891 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "Alt Padstyle 2: OX90Y60D30P"
+		(at -14.8136 18.796 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "Default Padstyle: EX47Y47D27P"
+		(at -15.7797 5.461 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "1st Mtg Padstyle: RX80Y110D50P"
+		(at -16.5424 7.366 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "2nd Mtg Padstyle: RX50Y100D40P"
+		(at -16.7288 9.271 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "3rd Mtg Padstyle: RX100Y50D40P"
+		(at -16.7288 11.176 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "Left Mtg Padstyle: RX50Y100D30P"
+		(at -16.9323 13.081 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "Right Mtg Padstyle: RX50Y100D30P"
+		(at -17.5085 14.986 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 1.1938 1.1938)
+				(thickness 0.0762)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "0.11in/2.794mm"
+		(at -18.5576 0.3175 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "0.055in/1.397mm"
+		(at -20.4038 -0.381 -180)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(effects
+			(font
+				(size 0.6096 0.6096)
+				(thickness 0.0254)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0 0)
+		(size 1.1938 1.1938)
+		(drill 0.6858)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.0635)
+		(thermal_bridge_angle 0)
+	)
+	(embedded_fonts no)
+	(fp_rect
+		(start -0.8469 -0.8469)
+		(end 0.8469 0.8469)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+	)
+	(embedded_fonts no)
+)
