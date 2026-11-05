@@ -84,6 +84,6 @@ USB-C in, 20 V out to the lamp's barrel jack through a short lead. It sits in a 
 - 1.6 mm board: the pocket and the USB-C height assume it.
 - The head runs straight from 20 V. The CXB1512 18 V class LED (17.2 V typical, 19 V max) works.
 - F1: same dual footprint as on the control board.
-- Q1: SQ2319CES or AO3407A (needs a ±20 V gate rating).
+- Q1: SQ2319CES or AO3407A. Not the AO3401A or other ±12 V-gate P-FETs: the gate sees up to about 19.5 V when the TVS clamps.
 - J2: wire pads for the lead, square +20 V, round GND, up to 0.5 mm².
 - Mounting: 4x M2 self-tapping screws into the pocket's bosses.
