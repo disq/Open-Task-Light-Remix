@@ -6,3 +6,4 @@ _autosave-*
 *.kicad_prl
 esphome/secrets.yaml
 esphome/.esphome/
+.DS_Store
