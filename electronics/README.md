@@ -24,6 +24,12 @@ Two KiCad 10 boards that share this folder's libraries:
 
 The outline, mounting hole, connectors, touch spring pins, light sensor and module socket are where V2 has them, so it drops into the upstream head.
 
+| Angled | Top | Bottom |
+|:---:|:---:|:---:|
+| <img src="renders/OTL-Control-Board-iso.png" width="280" alt="OTL-Control-Board iso"> | <img src="renders/OTL-Control-Board-top.png" width="280" alt="OTL-Control-Board top"> | <img src="renders/OTL-Control-Board-bottom.png" width="280" alt="OTL-Control-Board bottom"> |
+
+KiCad renders. The XIAO, the LED connector (J2), the spring pins and L2 have no 3D model, so they show as bare pads and holes.
+
 | | V2 | This board |
 |---|---|---|
 | Controller | Adafruit QT Py ESP32-S2, CircuitPython | Seeed XIAO ESP32-C6, ESPHome |
@@ -73,6 +79,10 @@ Flash the [firmware](../esphome/README.md#flashing) first; the LED stays dark un
 ## USB-PD base board (OTL-Base-PD)
 
 USB-C in, 20 V out to the lamp's barrel jack through a short lead. It sits in a pocket in the [reworked freestanding base](../mechanical/README.md#freestanding-base-for-the-usb-pd-board).
+
+| Angled | Top | Bottom |
+|:---:|:---:|:---:|
+| <img src="renders/OTL-Base-PD-iso.png" width="280" alt="OTL-Base-PD iso"> | <img src="renders/OTL-Base-PD-top.png" width="280" alt="OTL-Base-PD top"> | <img src="renders/OTL-Base-PD-bottom.png" width="280" alt="OTL-Base-PD bottom"> |
 
 - U1 (CH224A) asks the charger for 20 V. Q1 switches the output on only once the charger has agreed, so the lamp gets nothing during negotiation or from a charger without 20 V.
 - The green LED next to the USB-C lights once the output is on. It shows through a hole in the top of the base.
