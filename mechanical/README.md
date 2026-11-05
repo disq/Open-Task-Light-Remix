@@ -44,7 +44,7 @@ The split shell and collar go on the bed as they load, with no supports, at the 
 5. Route the cable through the lid notch and fit the lid.
 6. Fit the bottom shell with its pass-through under the pocket, slide the lead in along the slot from the rim to the pass-through, plug it into the jack and press it into the channel as upstream, then slide the cover in from the rim.
 
-With the front-mount jack: push it into the new plate from the domed side, run the nut on from the back and tighten it by turning the cable cap on it (snug: the body is plastic), pull the cap off, solder the power cable to the pins (+ to the centre-pin terminal; check with a meter), push the cap back onto the nut with its slot towards the channel on the back face (six positions, 60° apart), lay the lead into the channel, then fit the plate to the bracket plate as upstream.
+With the front-mount jack: push it into the new plate from the domed side, run the nut on from the back and tighten it by turning the cable cap on it (snug: the body is plastic), and pull the cap off. Before soldering, feed the power cable's free end in through the cap's side slot and out of its hex socket: the Molex connector on the other end won't go through the cap, so it can't go on once the cable is soldered. Solder the cable to the pins (+ to the centre-pin terminal; check with a meter), then slide the cap down the cable onto the nut with its slot towards the channel on the back face (six positions, 60° apart), lay the lead into the channel, then fit the plate to the bracket plate as upstream.
 
 ### Weight
 

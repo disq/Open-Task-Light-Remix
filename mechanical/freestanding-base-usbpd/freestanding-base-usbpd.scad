@@ -309,7 +309,6 @@ module cable_cap()
             [cap_head_d / 2, cap_head_z + (cap_head_d - cap_d) / 2], [cap_head_d / 2, cap_l], [0, cap_l]]);
         translate([0, 0, cap_end_t]) cylinder(d = cap_cavity_d, h = cap_l);
         translate([0, 0, cap_l - cap_socket_h]) cylinder(d = (jack_nut_af + 2 * cap_socket_gap) / cos(30), h = cap_l, $fn = 6);
-        // open at the end, so the cap slides on over wires that are already soldered
         translate([-cap_slot[0] / 2, cap_cavity_d / 2 - 0.5, -1]) cube([cap_slot[0], cap_head_d, cap_slot[1] + 1]);
     }
 
