@@ -33,7 +33,7 @@ Everything in this section is in `freestanding-base-usbpd/`. `freestanding-base-
 
 ### Printing
 
-The split shell and collar go on the bed as they load, with no supports, at the upstream shell settings. Set the collar on the shell with its spigot in the opening and glue the faces together with epoxy spread over the whole face, keeping glue out of the bore so the bracket cover can turn. Print the rest as the upstream guide says, in the same orientations. The pocket ceiling, the boss ends and the light-pipe sleeve need support; "support on build plate only" reaches them through the pocket's open bottom. The bottom shell prints desk face down as upstream, so the cover recess is on the bed side and its 45° sides need no support. Print the cover flat, desk face down. The jack plate prints back face down like the upstream one, the cable cap closed end down; neither needs support.
+The split shell and collar go on the bed as they load, with no supports, at the upstream shell settings. Set the collar on the shell with its spigot in the opening and glue the faces together with CA glue (superglue) round the whole face, keeping it out of the bore so the bracket cover can turn. Print the rest as the upstream guide says, in the same orientations. The pocket ceiling, the boss ends and the light-pipe sleeve need support; "support on build plate only" reaches them through the pocket's open bottom. The bottom shell prints desk face down as upstream, so the cover recess is on the bed side and its 45° sides need no support. Print the cover flat, desk face down. The jack plate prints back face down like the upstream one, the cable cap closed end down; neither needs support.
 
 ### Assembly
 
