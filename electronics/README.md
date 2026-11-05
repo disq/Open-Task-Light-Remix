@@ -56,25 +56,15 @@ The LED stays off at power-up until the firmware has configured the board, so a 
 | D10 | 18 | Over-temperature alert from the TMP1075 |
 | D0, D6-D9 | 0, 16, 17, 19, 20 | Free. D6 is the boot log's serial output. |
 
-### Ordering and assembly
+### Notes
 
-- JLC can assemble everything except the XIAO, its sockets and the Mill-Max 807 spring pins. Buy those separately and solder them by hand.
-- U6 (the light sensor) and C14 are on the back. Solder those two by hand unless you want to pay for double-sided assembly.
-- J1 and J2 (Molex Micro-Lock) and the spring pins are through-hole: use JLC's through-hole assembly or solder them by hand. LCSC's Molex stock is low, so order early.
-- F1 takes either the 1812 PTC, which can only be reflowed (let JLC fit it), or a Littelfuse 0466002 1206 fuse if you're soldering by hand. The fuse doesn't reset.
-- The XIAO needs low-profile sockets: 2x Samtec CES-107-01-G-S, as V2 used. Solder the XIAO's headers, pull off the plastic spacer and trim the pins to about 4.6 mm. Standard sockets put the module about 6 mm too high for the head. Don't buy the XIAO with headers already soldered.
-- Check JLC's rotation preview for the ICs, diodes and C1 before ordering.
-- The footprints also take these alternates: TTP223-BA6-TD for U7-U9, an FNR8040 inductor for L2, and any 47 µF 50 V 6.3 mm can up to about 6 mm tall for C1. Don't fit a taller C1: it sits next to the antenna.
-- If you'll use the PD board, check your LED runs from 20 V. The CXB1512 18 V class (17.2 V typical, 19 V max) does.
-
-### Bring-up
-
-Flash the [firmware](../esphome/README.md#flashing) first; the LED stays dark until it runs.
-
-- With 24 V in, check 5 V at TP6 and 3.3 V at TP7.
-- At full brightness, about 100 mV across R1 (TP5 to TP8) means the full 667 mA. Less means the supply voltage is too low for your LED.
-- To test the hardware cut-off, set `limit_high` to about 35 °C in the firmware and warm the board. The LED should go out even with the ESP32 stopped.
-- The touch chips calibrate at power-up, so don't touch the pads while plugging in.
+- Not assembled by JLC: the XIAO, its sockets and the Mill-Max 807 spring pins.
+- U6 (light sensor) and C14 are on the back.
+- The XIAO sits on low-profile sockets (2x Samtec CES-107-01-G-S, as on V2) with its pins trimmed to about 4.6 mm. Standard sockets are too tall for the head.
+- F1: 1812 PTC or Littelfuse 0466002 1206 fuse.
+- Alternates the footprints take: TTP223-BA6-TD (U7-U9), FNR8040 (L2), any 47 µF 50 V 6.3 mm can up to about 6 mm tall (C1).
+- Test points: TP4 CTRL, TP5 +24 V, TP6 +5 V, TP7 +3V3, TP8 LED+. 100 mV across R1 (TP5 to TP8) is the full 667 mA.
+- Firmware: [`../esphome/`](../esphome/README.md#flashing).
 
 ## USB-PD base board (OTL-Base-PD)
 
@@ -89,10 +79,11 @@ USB-C in, 20 V out to the lamp's barrel jack through a short lead. It sits in a 
 - The input is fused (F1) and clamped (D1).
 - The charger needs a 20 V profile: every charger over 45 W has one, and most 30 W ones do. The lamp draws about 0.75 A.
 
-### Ordering and assembly
+### Notes
 
-- Order it 1.6 mm thick: the pocket and the USB-C height assume it.
-- F1 is the same dual footprint as on the control board: the PTC by reflow or hotplate only, or the 1206 fuse by hand.
-- Q1 is an SQ2319CES; an AO3407A drops in. Don't use ±12 V-gate parts such as the AO3401A.
-- J2 is two wire pads for the lead (square = +20 V, round = GND), for wire up to 0.5 mm². It isn't in the BOM.
-- It's held by 4x M2 self-tapping screws into the pocket's bosses.
+- 1.6 mm board: the pocket and the USB-C height assume it.
+- The head runs straight from 20 V. The CXB1512 18 V class LED (17.2 V typical, 19 V max) works.
+- F1: same dual footprint as on the control board.
+- Q1: SQ2319CES or AO3407A (needs a ±20 V gate rating).
+- J2: wire pads for the lead, square +20 V, round GND, up to 0.5 mm².
+- Mounting: 4x M2 self-tapping screws into the pocket's bosses.
