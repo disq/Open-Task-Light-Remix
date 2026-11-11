@@ -101,8 +101,9 @@ cap_top_gap = 0.3;
 cap_socket_gap = 0.15;
 // stops short of the jack plate's wall, so the socket pushes on the nut, not on the plate
 cap_socket_h = jack_nut_h - 0.2;
-// runs up to the plate's back face, so the lead can leave flat into the channel
-cap_slot = [3, bracket_plate_t - cap_top_gap + lead_channel[1] + 0.3];
+// runs up to the plate's back face, so the lead can leave flat into the channel; wide enough for the lead's
+// Molex Micro-Lock plug (about 4.9 x 3.9 mm) to pass, so the cap goes on after soldering
+cap_slot = [5.5, bracket_plate_t - cap_top_gap + lead_channel[1] + 0.3];
 
 module pocket_frame() rotate([0, 0, pocket_angle]) children();
 

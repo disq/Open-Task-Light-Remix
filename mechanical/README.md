@@ -45,9 +45,9 @@ With the front-mount jack, in place of upstream's jack plate steps:
 
 1. Push the jack into the new plate from the domed side, with its flats lined up, until its head sits down in the recess.
 2. Run the nut on from the back and tighten it by turning the cable cap on it (snug: the body is plastic). Pull the cap off.
-3. Before soldering, feed the cable's free end in through the cap's side slot and out of its hex end: the Molex connector on the other end won't go through.
-4. Solder the cable to the pins, + to the centre pin (check with a meter). Don't shorten the pins: the cap covers them at full length.
-5. Slide the cap onto the nut with its slot towards the channel on the back, lay the lead in the channel, and fit the plate as upstream.
+3. Solder the cable to the pins, + to the centre pin (check with a meter). Don't shorten the pins: the cap covers them at full length.
+4. Pass the Molex plug on the cable's other end in through the cap's hex end and out of its side slot, thin side first. The slot is wide enough for it, so the cap can come off and go back on without unsoldering.
+5. Slide the cap down the cable onto the nut with its slot towards the channel on the back, lay the lead in the channel, and fit the plate as upstream.
 
 ### Weight
 
