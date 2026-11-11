@@ -79,6 +79,10 @@ jack_head_bore_z0 = 9.6;
 // jack plate print frame: z 0 is the face against the bracket plate, the dome faces the bottom shell
 // front-mount jack with a double-D threaded body: in from the dome side, nut from the back
 jack_face_z = 8.45;
+// the head sits this far up in a recess, which lifts the plug hanging from the jack about 0.7 mm clear of the desk
+jack_lift = 1.25;
+jack_head_d = 9.7;
+jack_head_gap = 0.25;
 jack_wall = 3;
 jack_body_d = 7.6;
 jack_flats = 6.8;
@@ -92,8 +96,8 @@ lead_channel = [2.4, 1.2];
 cap_d = 11;
 cap_head_d = 15;
 cap_cavity_d = 9;
-cap_end_t = 0.7;
-cap_top_gap = 0.45;
+cap_end_t = 0.4;
+cap_top_gap = 0.3;
 cap_socket_gap = 0.15;
 // stops short of the jack plate's wall, so the socket pushes on the nut, not on the plate
 cap_socket_h = jack_nut_h - 0.2;
@@ -273,7 +277,8 @@ module double_d(d, flats, h)
         translate([-flats / 2, -d / 2, 0]) cube([flats, d, h]);
     }
 
-jack_nut_z = jack_face_z - jack_wall;
+jack_seat_z = jack_face_z - jack_lift;
+jack_nut_z = jack_seat_z - jack_wall;
 
 module jack_plate()
     difference() {
@@ -293,6 +298,7 @@ module jack_plate()
             translate([0, 0, jack_nut_z]) double_d(jack_body_d, jack_flats, jack_wall + 1);
         }
         translate([-lead_channel[0] / 2, 0, -1]) cube([lead_channel[0], 20, lead_channel[1] + 1]);
+        translate([0, 0, jack_seat_z]) cylinder(d = jack_head_d + 2 * jack_head_gap, h = 10, $fn = 96);
     }
 
 // cap frame: z 0 is the end just short of the rail end, which sits on the bracket plate right above the pins

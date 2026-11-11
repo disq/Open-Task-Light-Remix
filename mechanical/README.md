@@ -43,7 +43,7 @@ All in `freestanding-base-usbpd/`:
 
 With the front-mount jack, in place of upstream's jack plate steps:
 
-1. Push the jack into the new plate from the domed side, with its flats lined up.
+1. Push the jack into the new plate from the domed side, with its flats lined up, until its head sits down in the recess.
 2. Run the nut on from the back and tighten it by turning the cable cap on it (snug: the body is plastic). Pull the cap off.
 3. Before soldering, feed the cable's free end in through the cap's side slot and out of its hex end: the Molex connector on the other end won't go through.
 4. Solder the cable to the pins, + to the centre pin (check with a meter). Don't shorten the pins: the cap covers them at full length.
@@ -56,7 +56,7 @@ Use shot at least 1 mm across (S550 as upstream, or lead shot), not sand or grit
 ### Also needed
 
 - 4x M2 self-tapping screws, M2x5 or M2x6 (7 mm max).
-- A right-angle DC plug with about 10 cm of lead (up to 4 mm thick, wire up to 0.5 mm²), cut from a right-angle extension that matches your jack. The one used here, not yet tried with the front-mount jack, is the 5.5 x 2.1 mm one on [this AliExpress listing](https://www.aliexpress.com/item/1005013033782592.html).
+- A right-angle DC plug with about 10 cm of lead (up to 4 mm thick, wire up to 0.5 mm²), cut from a right-angle extension that matches your jack. The one used here is the 5.5 x 2.1 mm one on [this AliExpress listing](https://www.aliexpress.com/item/1005013033782592.html); the front-mount jack plate holds it about 0.7 mm clear of the desk.
 - A USB-C PD charger with a 20 V profile (most 30 W and up).
 
 ## Electronics housing
