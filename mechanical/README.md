@@ -55,7 +55,7 @@ Use shot at least 1 mm across (S550 as upstream, or lead shot), not sand or grit
 
 ### Also needed
 
-- 4x M2 self-tapping screws, M2x5 or M2x6 (7 mm max).
+- 4x M2x6 screws for the board. Cap-head machine screws (used here) cut their own thread in the pilot holes; self-tapping screws work too. 7 mm max.
 - A right-angle DC plug with about 10 cm of lead (up to 4 mm thick, wire up to 0.5 mm²), cut from a right-angle extension that matches your jack. The one used here is the 5.5 x 2.1 mm one on [this AliExpress listing](https://www.aliexpress.com/item/1005013033782592.html); the front-mount jack plate holds it about 0.7 mm clear of the desk.
 - A USB-C PD charger with a 20 V profile (most 30 W and up).
 

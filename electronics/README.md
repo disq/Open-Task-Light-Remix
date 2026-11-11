@@ -60,7 +60,7 @@ The LED stays off at power-up until the firmware has configured the board, so a 
 
 - Not assembled by JLC: the XIAO, its sockets and the Mill-Max 807 spring pins.
 - U6 (light sensor) and C14 are on the back.
-- The XIAO sits on low-profile sockets (2x Samtec CES-107-01-G-S, as on V2) with its pins trimmed to about 4.6 mm. Standard sockets are too tall for the head.
+- The XIAO sits on low-profile sockets (2x Samtec CES-107-01-G-S, as on V2). After soldering its header pins, pull the plastic spacer off them, so the XIAO sits about 2 mm lower and clears the LED brackets, and trim the pins to about 4.6 mm. Standard sockets are too tall for the head.
 - F1: 1812 PTC or Littelfuse 0466002 1206 fuse.
 - Alternates the footprints take: TTP223-BA6-TD (U7-U9), FNR8040 (L2), any 47 µF 50 V 6.3 mm can up to about 6 mm tall (C1).
 - Test points: TP4 CTRL, TP5 +24 V, TP6 +5 V, TP7 +3V3, TP8 LED+. 100 mV across R1 (TP5 to TP8) is the full 667 mA.
@@ -86,4 +86,4 @@ USB-C in, 20 V out to the lamp's barrel jack through a short lead. It sits in a 
 - F1: same dual footprint as on the control board.
 - Q1: SQ2319CES or AO3407A. Not the AO3401A or other ±12 V-gate P-FETs: the gate sees up to about 19.5 V when the TVS clamps.
 - J2: wire pads for the lead, square +20 V, round GND, up to 0.5 mm².
-- Mounting: 4x M2 self-tapping screws into the pocket's bosses.
+- Mounting: 4x M2x6 cap-head machine screws into the pocket's bosses.
