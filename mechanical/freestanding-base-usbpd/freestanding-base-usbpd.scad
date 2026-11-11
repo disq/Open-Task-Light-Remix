@@ -101,9 +101,7 @@ cap_top_gap = 0.3;
 cap_socket_gap = 0.15;
 // stops short of the jack plate's wall, so the socket pushes on the nut, not on the plate
 cap_socket_h = jack_nut_h - 0.2;
-// runs up to the plate's back face, so the lead can leave flat into the channel; wide enough for the lead's
-// Molex Micro-Lock plug (about 4.9 x 3.9 mm) to pass, so the cap goes on after soldering
-cap_slot = [5.5, bracket_plate_t - cap_top_gap + lead_channel[1] + 0.3];
+molex_plug_thickness = 3.9;
 
 module pocket_frame() rotate([0, 0, pocket_angle]) children();
 
@@ -307,6 +305,9 @@ cap_back_face_z = bracket_plate_t - cap_top_gap;
 cap_l = cap_back_face_z + jack_nut_z - jack_nut_h + cap_socket_h;
 // the head widens 0.2 mm below the bracket plate, so it can't back far enough off the nut to let go
 cap_head_z = cap_back_face_z + 0.2;
+cap_slot_w = molex_plug_thickness + 1.6;
+cap_slot_top_z = cap_back_face_z + lead_channel[1] + 0.3;
+cap_slot_start_y = sqrt(pow(cap_cavity_d / 2, 2) - pow(cap_slot_w / 2, 2)) - 0.1;
 
 // a hex socket on the nut: turning the cap tightens the nut, and the cap stays on it
 module cable_cap()
@@ -316,7 +317,7 @@ module cable_cap()
             [cap_head_d / 2, cap_head_z + (cap_head_d - cap_d) / 2], [cap_head_d / 2, cap_l], [0, cap_l]]);
         translate([0, 0, cap_end_t]) cylinder(d = cap_cavity_d, h = cap_l);
         translate([0, 0, cap_l - cap_socket_h]) cylinder(d = (jack_nut_af + 2 * cap_socket_gap) / cos(30), h = cap_l, $fn = 6);
-        translate([-cap_slot[0] / 2, cap_cavity_d / 2 - 0.5, -1]) cube([cap_slot[0], cap_head_d, cap_slot[1] + 1]);
+        translate([-cap_slot_w / 2, cap_slot_start_y, -1]) cube([cap_slot_w, cap_head_d, cap_slot_top_z + 1]);
     }
 
 // bracket cover frame (upstream STL): z 0 is the open face that sits on the bracket plate
