@@ -11,6 +11,7 @@ Printed parts that replace or add to the upstream Open Task Light v1.1 parts. Ev
 | `freestanding-base-usbpd/` | The freestanding base, reworked to hold the [USB-PD base board](../electronics/README.md#usb-pd-base-board-otl-base-pd) |
 | `electronics-housing/` | Button sockets the kit buttons fit into |
 | `counterweight/` | A lid that fits the lead counterweight enclosure |
+| `rail-ends/` | A rail end cap that cannot turn on the rail |
 
 ## Freestanding base for the USB-PD board
 
@@ -69,9 +70,17 @@ Use shot at least 1 mm across (S550 as upstream, or lead shot), not sand or grit
 
 Print it inner face down, no supports. To fit it, hook the tongue into the slot under the lip, push the lid towards the lip, swing the screw end in and screw it down.
 
+## Rail ends
+
+`rail-ends/rail-end-cap_v1.0-keyed.stl`: upstream's end cap with four keys. The keys go 6 mm into the four rail slots, so the cap cannot turn on its screw. The key shape is the same as on upstream's clamping-base rail terminal. The power track ends far inside the rail, so the keys do not touch it.
+
+Print it with the screw counterbore on the bed and the keys up, with no supports. Two thin bridge layers above the counterbore make its flat top print cleanly.
+
+For the pulley mount, print upstream's optional alignment insert (`pulley-mount-insert_v1.0`). It goes in the pocket under the mount and into the rail slot, and stops the mount turning.
+
 ## Rebuilding from the SCAD files
 
-The SCAD files (OpenSCAD 2021.01) rebuild the STLs if you change a setting. The base and button-socket files build from upstream's STLs and look for a clone of [upstream](https://github.com/stevenbennett/Open-Task-Light) in the same folder as this repo; set `src` if yours is elsewhere. The base file picks its part with `part` (`shell`, `shell_split`, `collar`, `lid`, `bottom`, `cover`, `jack_plate`, `cable_cap`, `bracket_cover`, or `assembly`, which shows the board from `OTL-Base-PD.stl` in place). From `freestanding-base-usbpd/`:
+The SCAD files (OpenSCAD 2021.01) rebuild the STLs if you change a setting. The base, button-socket and end-cap files build from upstream's STLs and look for a clone of [upstream](https://github.com/stevenbennett/Open-Task-Light) in the same folder as this repo; set `src` if yours is elsewhere. The base file picks its part with `part` (`shell`, `shell_split`, `collar`, `lid`, `bottom`, `cover`, `jack_plate`, `cable_cap`, `bracket_cover`, or `assembly`, which shows the board from `OTL-Base-PD.stl` in place). From `freestanding-base-usbpd/`:
 
 ```bash
 openscad -D 'part="shell"' -o shell.stl freestanding-base-usbpd.scad

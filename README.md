@@ -10,7 +10,7 @@ A remix of [Open Task Light](https://github.com/stevenbennett/Open-Task-Light) b
 |---|---|
 | [`electronics/`](electronics/) | KiCad 10 projects, Gerbers, BOMs and JLC placement files for two boards: the head's control board, reworked around a Seeed XIAO ESP32-C6, and a USB-PD board that powers the lamp at 20 V from a USB-C charger. |
 | [`esphome/`](esphome/) | ESPHome firmware for the control board, for Home Assistant. |
-| [`mechanical/`](mechanical/) | Printed parts: the freestanding base reworked for the PD board, wider button sockets for the electronics housing, and a lead counterweight lid that goes in. |
+| [`mechanical/`](mechanical/) | Printed parts: the freestanding base reworked for the PD board, wider button sockets for the electronics housing, a lead counterweight lid that goes in, and a rail end cap that cannot turn. |
 
 Each folder has its own README with the details.
 
