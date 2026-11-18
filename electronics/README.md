@@ -63,6 +63,7 @@ The LED stays off at power-up until the firmware has configured the board, so a 
 - The XIAO sits on low-profile sockets (2x Samtec CES-107-01-G-S, as on V2). After soldering its header pins, pull the plastic spacer off them, so the XIAO sits about 2 mm lower and clears the LED brackets, and trim the pins to about 4.6 mm. Standard sockets are too tall for the head.
 - F1: 1812 PTC or Littelfuse 0466002 1206 fuse.
 - Alternates the footprints take: TTP223-BA6-TD (U7-U9), FNR8040 (L2), any 47 µF 50 V 6.3 mm can up to about 6 mm tall (C1).
+- Optional, marked DNP and not fitted on the tested board, which works without them: C10 (1 µF 50 V across the LED, to cut ripple current) and C16, C18, C20 (0-50 pF on the touch pads). Without them the buttons trigger from about 15 mm away; fit them if you want a firmer touch, as more capacitance lowers the TTP223's sensitivity.
 - Test points: TP4 CTRL, TP5 +24 V, TP6 +5 V, TP7 +3V3, TP8 LED+. 100 mV across R1 (TP5 to TP8) is the full 667 mA.
 - Firmware: [`../esphome/`](../esphome/README.md#flashing).
 

@@ -1,8 +1,8 @@
 # Open Task Light Remix
 
-## ⚠️ NOT FINISHED YET
+## ✅ Works
 
-This is a work in progress: parts are still being printed, tested and changed.
+Built and working. The control board was built without its optional capacitors (C10, C16, C18, C20): see the [electronics notes](electronics/README.md#notes).
 
 A remix of [Open Task Light](https://github.com/stevenbennett/Open-Task-Light) by Steven Bennett: a new control board for the head running ESPHome, a USB-C PD board in the freestanding base with the printed parts to hold it, and fixes for printed parts that don't fit. The rest of the lamp is built as upstream.
 

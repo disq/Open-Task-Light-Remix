@@ -1,8 +1,8 @@
 # Mechanical
 
-## ⚠️ NOT FINISHED YET
+## ✅ Works
 
-This is a work in progress: parts are still being printed, tested and changed.
+Printed, fitted and working in a lamp.
 
 Printed parts that replace or add to the upstream Open Task Light v1.1 parts. Everything not listed here is the upstream part, printed as the upstream guide says. Print at 100% scale.
 
